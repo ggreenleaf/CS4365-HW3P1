@@ -12,7 +12,7 @@ class KnowledgeBase:
 	def display(self):
 		for num,clause,parents in self.kb:
 			print num,clause,parents
-
+		print "Size of final clause set: %i"%len(self.kb)
 	def negate_literal(self,lit):
 		'''negates a single literal ~p ==> p or p ==> ~p''' 
 		return lit[-1] if lit[0] == "~" else "~%s"%lit
@@ -47,23 +47,24 @@ class KnowledgeBase:
 			return "Clause not in Knowledge Base"
 
 
-		self.negate_clause(a) #negate a then put in kb
-		for num, clause, parents in self.kb:
-			print num, clause, parents
-		
+		self.negate_clause(a) #start of algorithm will negate clause then instert into kb
 		while True:
 			cur_clause = self.kb[-1] #get last clause
-			#find clause containing a negated literal in cur clause
+			#find clause containing a negated literal in cur_clause
+			#and remove contradictions
+			#for example if kb contains p ~q and ~p this is a contradiction
 			new_clause = self.resolve(cur_clause,self.find_clause(cur_clause))
-			print new_clause[0], new_clause[1], new_clause[2]
 			if new_clause[1] == '': 
-				print "False"
+			 #	new_clause[1] = "False"
+			 	self.kb.append((new_clause[0], "False",new_clause[2]))
 				break
 			elif new_clause == "Failure":
 				print "Failure"
 				break
 			else:
 				self.kb.append(new_clause)
+
+
 
 	def find_clause(self,clause):
 		'''finds a clause in knowledge base that contains a negated literal in clause'''		
@@ -73,3 +74,4 @@ class KnowledgeBase:
 					if self.negate_literal(l1) == l2 :
 						return ci
 		return "Failure" 
+
