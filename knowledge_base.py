@@ -89,10 +89,7 @@ class KnowledgeBase:
 				if self.are_clauses_subset(new_clauses):#set([x[0] for x in new_clauses]).issubset(self.get_kb_set()): #if no new clauses have been added then clause tested is not valid
 					return False
 
-				# for c in new_clauses: #add clauses generated to knowledge base
-				# 	if c[0] not in self.get_kb_set():
-				# 		 self.kb.append((len(self.kb)+1,c[0],c[1]))
-				self.add_to_kb(new_clauses)
+				self.add_to_kb(new_clauses) #added new clauses to knowledge base
 
 
 
