@@ -1,15 +1,12 @@
 from sys import argv
-from knowledge_base import KnowledgeBase as KB 
+import knowledge_base as kb
 
 filename = argv[1]
 
-
-kb = KB(filename) 
-
+kb = kb.KnowledgeBase(filename) 
 valid = kb.resolution()
-# print valid
-# if valid:
-# 	kb.display()
-# else:
-# 	kb.display()
-# 	print "Failure"
+if valid:
+ 	kb.display()
+else:
+ 	kb.display()
+ 	print "Failure"
