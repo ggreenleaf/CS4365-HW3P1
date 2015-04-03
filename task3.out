@@ -1,0 +1,81 @@
+1. NoLeak ~NoLeakH1 ~NoLeakH2 {}
+2. NoLeakH1 ~okH1 {}
+3. NoLeakH1 V2 okH1 {}
+4. NoLeakH2 ~okH2 {}
+5. NoLeakH2 V2 okH2 {}
+6. ~okH2 {}
+7. okH1 {}
+8. ~V2 {}
+9. NoLeak {}
+10. NoLeak ~NoLeakH1 ~okH2 {1 4}
+11. NoLeakH2 okH2 {5 8}
+12. NoLeakH1 V2 {2 3}
+13. NoLeakH2 V2 {4 5}
+14. NoLeakH1 {2 7}
+15. NoLeak V2 okH1 ~NoLeakH2 {1 3}
+16. NoLeakH1 okH1 {3 8}
+17. NoLeak V2 okH2 ~NoLeakH1 {1 5}
+18. NoLeak ~NoLeakH2 ~okH1 {1 2}
+19. NoLeak V2 okH1 okH2 {16 17}
+20. NoLeak V2 okH2 ~okH1 {5 18}
+21. NoLeak NoLeakH2 ~NoLeakH1 {10 11}
+22. NoLeak okH1 ~NoLeakH2 {8 15}
+23. NoLeak NoLeakH1 ~NoLeakH2 {16 18}
+24. NoLeak NoLeakH2 V2 ~NoLeakH1 {4 17}
+25. NoLeakH2 {6 11}
+26. NoLeak NoLeakH1 V2 ~NoLeakH2 {2 15}
+27. NoLeak ~okH1 ~okH2 {4 18}
+28. NoLeak ~okH2 {10 14}
+29. NoLeak V2 ~NoLeakH2 {15 18}
+30. NoLeak V2 ~okH1 {13 18}
+31. NoLeak V2 okH1 ~okH2 {3 10}
+32. NoLeak okH2 ~okH1 {11 18}
+33. NoLeak V2 okH2 {14 17}
+34. NoLeak okH2 ~NoLeakH1 {1 11}
+35. NoLeak V2 ~NoLeakH1 {6 17}
+36. NoLeak V2 ~okH2 {10 12}
+37. NoLeak V2 okH1 {13 15}
+38. NoLeak okH1 ~okH2 {10 16}
+39. NoLeak ~NoLeakH2 {7 18}
+40. NoLeak NoLeakH2 V2 okH1 {5 38}
+41. NoLeak ~okH1 {8 30}
+42. NoLeak V2 {14 35}
+43. NoLeak okH1 {8 37}
+44. NoLeak V2 okH2 ~NoLeakH2 {17 23}
+45. NoLeak ~NoLeakH2 ~okH2 {22 27}
+46. NoLeak NoLeakH1 okH2 {11 23}
+47. NoLeak NoLeakH2 okH1 {11 38}
+48. NoLeak okH2 ~NoLeakH2 {22 32}
+49. NoLeak NoLeakH1 ~okH2 {16 27}
+50. NoLeak V2 ~NoLeakH1 ~okH1 {17 27}
+51. NoLeak NoLeakH2 V2 {14 24}
+52. NoLeak NoLeakH1 V2 {2 37}
+53. NoLeak NoLeakH2 {11 28}
+54. NoLeak okH1 okH2 {11 22}
+55. NoLeak ~NoLeakH1 {1 25}
+56. NoLeak NoLeakH2 V2 ~okH1 {2 24}
+57. NoLeak V2 okH1 ~NoLeakH1 {22 24}
+58. NoLeak NoLeakH1 V2 okH2 {2 19}
+59. NoLeak NoLeakH1 V2 ~okH2 {3 27}
+60. NoLeak okH1 ~NoLeakH1 {21 22}
+61. NoLeak ~NoLeakH1 ~okH1 {18 21}
+62. NoLeak NoLeakH2 ~okH1 {4 32}
+63. NoLeak okH2 {11 39}
+64. NoLeak V2 ~NoLeakH2 ~okH2 {10 26}
+65. NoLeak NoLeakH1 {23 25}
+66. NoLeak V2 ~NoLeakH2 ~okH1 {32 64}
+67. NoLeak V2 ~okH1 ~okH2 {62 64}
+68. NoLeak NoLeakH1 NoLeakH2 V2 {3 56}
+69. NoLeak V2 ~NoLeakH1 ~NoLeakH2 {17 45}
+70. NoLeak NoLeakH1 V2 ~okH1 {32 59}
+71. NoLeak NoLeakH2 ~okH2 {38 62}
+72. NoLeak NoLeakH2 okH2 {21 46}
+73. NoLeak NoLeakH1 okH1 {38 46}
+74. NoLeak NoLeakH2 V2 okH2 {19 56}
+75. NoLeak NoLeakH2 V2 ~okH2 {21 59}
+76. NoLeak V2 ~NoLeakH1 ~okH2 {21 64}
+77. NoLeak NoLeakH1 V2 okH1 {19 59}
+78. NoLeak NoLeakH1 NoLeakH2 {2 47}
+79. NoLeak NoLeakH1 ~okH1 {32 49}
+Size of final clause set: 79
+Failure
