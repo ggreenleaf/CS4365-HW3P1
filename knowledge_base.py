@@ -8,13 +8,31 @@ class KnowledgeBase:
 		for line in lines:
 			self.kb.append((i," ".join(sorted(line.split(" "))),"{}"))
 			i += 1
-
+		
+		print "intial clauses before resolving"
+		self.display()
+		print"-------------------------------"
+		#not sure of how to test for which clause testing so uncommit line before running test
+		# self.test_clause = "y ~y z ~z" #for clauses.txt 
+		#self.test_clause = "~LowTemp LowTemp" #for task1.in
+		# self.test_clause = "ReactorUnitSafe ~ReactorUnitSafe" #for task2.in
+		# self.test_clause = "~NoLeak NoLeak" #for task3.in
+	
 	def display(self):
 		for num,clause,parents in self.kb:
 			print "%i."%num,clause,parents
-		
+				
 		print "Size of final clause set: %i"%len(self.kb)
 	
+	def display_solution(self):
+		'''displays solution after testing validity of a clase'''
+		for num,clause,parents in self.kb:
+			if set(self.test_clause.split(" ")) & set(clause.split(" ")) or clause == "False":
+				print "%i."%num,clause,parents
+
+		print "Size of final clause set: %i"%len(self.kb)
+
+
 	def negate_literal(self,lit):
 		'''negates a single literal ~p ==> p or p ==> ~p''' 
 		return lit[1:] if lit[0] == "~" else "~%s"%lit

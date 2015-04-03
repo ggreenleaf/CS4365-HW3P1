@@ -1,3 +1,15 @@
+intial clauses before resolving
+1. NoLeak ~NoLeakH1 ~NoLeakH2 {}
+2. NoLeakH1 ~okH1 {}
+3. NoLeakH1 V2 okH1 {}
+4. NoLeakH2 ~okH2 {}
+5. NoLeakH2 V2 okH2 {}
+6. ~okH2 {}
+7. okH1 {}
+8. ~V2 {}
+9. NoLeak {}
+Size of final clause set: 9
+-------------------------------
 1. NoLeak ~NoLeakH1 ~NoLeakH2 {}
 2. NoLeakH1 ~okH1 {}
 3. NoLeakH1 V2 okH1 {}

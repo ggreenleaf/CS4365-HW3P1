@@ -7,7 +7,7 @@ kb = kb.KnowledgeBase(filename)
 
 valid = kb.resolution()
 if valid:
- 	kb.display()
+ 	kb.display_solution()
 else:
  	kb.display()
  	print "Failure"

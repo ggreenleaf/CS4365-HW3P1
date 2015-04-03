@@ -1,3 +1,4 @@
+intial clauses before resolving
 1. ReactorUnitSafe ~LowTemp ~NoLeak {}
 2. NoLeak ~NoLeakH1 ~NoLeakH2 {}
 3. NoLeakH1 ~okH1 {}
@@ -13,280 +14,138 @@
 13. V1 {}
 14. ~V2 {}
 15. ~ReactorUnitSafe {}
+Size of final clause set: 15
+-------------------------------
+1. ReactorUnitSafe ~LowTemp ~NoLeak {}
+15. ~ReactorUnitSafe {}
 16. ReactorUnitSafe l ~NoLeak ~V2 {1 9}
-17. LowTemp NoLeakH2 okH2 ~V1 ~l {6 7}
-18. LowTemp NoLeakH2 l okH2 {6 9}
 19. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 {1 2}
 20. ReactorUnitSafe l ~NoLeak ~V1 {1 8}
-21. NoLeak ~NoLeakH2 ~okH1 {2 3}
-22. NoLeakH1 V1 {3 4}
-23. LowTemp ~V1 ~V2 {7 9}
-24. NoLeakH2 okH2 {6 14}
-25. NoLeak V1 okH1 ~NoLeakH2 {2 4}
-26. NoLeakH1 {3 12}
-27. LowTemp ~V2 ~l {7 13}
-28. LowTemp NoLeakH1 l okH1 {4 8}
-29. NoLeak V2 okH2 ~NoLeakH1 {2 6}
-30. ~LowTemp ~NoLeak {1 15}
-31. NoLeak ~NoLeakH1 ~okH2 {2 5}
-32. NoLeakH2 V2 {6 11}
 33. ReactorUnitSafe ~NoLeak ~V1 ~V2 ~l {1 7}
-34. LowTemp ~V2 {9 10}
-35. LowTemp ~V1 {8 10}
-36. LowTemp l {8 13}
-37. LowTemp NoLeakH1 okH1 ~V2 ~l {4 7}
 38. ReactorUnitSafe l okH2 ~NoLeakH1 {16 29}
 39. ReactorUnitSafe l ~NoLeakH1 ~V1 ~okH2 {20 31}
-40. NoLeak V1 ~okH2 {22 31}
-41. ~NoLeak ~V1 {30 35}
 42. NoLeakH1 ReactorUnitSafe l ~NoLeak {20 22}
-43. ~LowTemp ~NoLeakH1 ~NoLeakH2 {2 30}
-44. LowTemp NoLeakH2 okH2 ~V1 {17 18}
 45. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V1 ~l {6 33}
 46. ReactorUnitSafe ~NoLeak ~V1 {1 35}
-47. NoLeakH2 {5 24}
 48. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~okH2 {1 31}
-49. LowTemp NoLeakH2 l {9 32}
-50. NoLeak V1 V2 okH1 {25 32}
 51. NoLeakH2 ReactorUnitSafe ~NoLeak ~V1 ~l {32 33}
-52. LowTemp NoLeak okH2 ~NoLeakH1 ~V1 {23 29}
-53. V2 okH2 ~LowTemp ~NoLeakH1 {29 30}
-54. LowTemp NoLeakH2 ~V1 {23 32}
 55. ReactorUnitSafe V2 l okH2 ~NoLeakH1 ~V1 {20 29}
-56. LowTemp NoLeakH2 ~l {27 32}
 57. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 ~l {19 27}
 58. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 {19 34}
-59. LowTemp NoLeakH2 okH2 ~V2 {18 27}
-60. ~NoLeak ~V2 ~l {27 30}
 61. NoLeakH2 ReactorUnitSafe l okH2 ~NoLeak {1 18}
-62. NoLeak okH2 ~NoLeakH1 {2 24}
 63. ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l ~okH2 {31 33}
 64. LowTemp ReactorUnitSafe ~NoLeak ~V1 ~V2 {9 33}
-65. NoLeak ~okH2 {26 31}
-66. LowTemp NoLeak okH1 ~NoLeakH2 {25 35}
-67. LowTemp NoLeak okH1 ~NoLeakH2 ~V2 {23 25}
 68. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~NoLeak ~V1 ~V2 {20 37}
-69. NoLeak V1 V2 okH1 okH2 {4 29}
-70. ~NoLeak ~V1 ~V2 {23 30}
-71. LowTemp NoLeak okH2 ~V1 ~l ~okH1 {17 21}
 72. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V1 ~V2 {18 33}
-73. NoLeak V2 ~NoLeakH1 {29 31}
-74. LowTemp NoLeak okH2 ~NoLeakH1 {29 34}
-75. LowTemp NoLeakH1 okH1 ~V2 {9 37}
-76. LowTemp NoLeak okH2 ~NoLeakH1 ~V1 ~l {7 29}
-77. LowTemp NoLeakH2 okH2 {6 34}
-78. NoLeak V2 ~okH1 {21 32}
-79. LowTemp NoLeak okH1 okH2 ~l {29 37}
 80. ReactorUnitSafe V2 okH2 ~LowTemp ~NoLeakH1 {6 19}
-81. LowTemp NoLeakH1 NoLeakH2 okH1 okH2 ~V1 {17 28}
-82. LowTemp NoLeak NoLeakH2 l ~NoLeakH1 {18 31}
-83. NoLeak ~NoLeakH2 {2 26}
 84. ReactorUnitSafe l ~NoLeakH1 ~V2 ~okH2 {16 31}
-85. LowTemp NoLeakH1 NoLeakH2 okH1 okH2 ~V2 {18 37}
 86. ReactorUnitSafe l okH1 ~NoLeakH2 {20 25}
-87. LowTemp NoLeakH2 ~V1 ~l {11 17}
-88. NoLeak V2 okH2 {26 29}
-89. LowTemp NoLeak okH2 ~NoLeakH1 ~l {27 29}
-90. l ~NoLeak ~V1 {8 30}
 91. ReactorUnitSafe l ~NoLeakH1 ~NoLeakH2 ~V2 {2 16}
 92. ReactorUnitSafe l ~NoLeakH1 ~NoLeakH2 {19 36}
 93. ReactorUnitSafe l ~NoLeakH2 ~V2 ~okH1 {16 21}
 94. ReactorUnitSafe V1 okH1 ~LowTemp ~NoLeakH2 {4 19}
-95. LowTemp NoLeak okH1 ~V2 ~l ~okH2 {31 37}
-96. LowTemp NoLeak l okH2 ~NoLeakH1 {9 29}
-97. NoLeakH2 okH2 ~NoLeak ~V1 ~l {17 30}
-98. l ~NoLeak {30 36}
 99. ReactorUnitSafe V2 ~LowTemp ~NoLeakH1 {19 32}
 100. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~NoLeak ~V2 {16 37}
 101. ReactorUnitSafe okH2 ~LowTemp ~NoLeakH1 {19 24}
-102. NoLeak okH2 ~okH1 {21 24}
-103. LowTemp NoLeak NoLeakH1 ~NoLeakH2 ~V2 ~l {21 37}
 104. ReactorUnitSafe ~NoLeak ~V1 ~V2 {20 33}
-105. NoLeakH1 l okH1 ~NoLeak {28 30}
-106. NoLeak V2 okH2 ~okH1 {6 21}
 107. LowTemp ReactorUnitSafe ~NoLeak ~V2 {16 27}
-108. LowTemp NoLeakH1 okH1 {10 28}
-109. NoLeak V1 V2 okH2 {22 29}
-110. l ~NoLeak ~V2 {9 30}
-111. LowTemp NoLeakH1 l {3 28}
-112. LowTemp NoLeak okH1 ~NoLeakH2 ~V2 ~l {7 25}
-113. LowTemp NoLeakH1 NoLeakH2 okH1 okH2 ~l {6 37}
-114. NoLeak V1 okH1 okH2 {24 25}
 115. ReactorUnitSafe ~NoLeak ~V2 {10 16}
-116. LowTemp NoLeakH1 NoLeakH2 okH2 ~l {17 22}
-117. LowTemp NoLeak V1 l okH1 okH2 {18 25}
 118. ReactorUnitSafe l ~NoLeak {1 36}
-119. ~NoLeak ~V1 ~V2 ~l {7 30}
-120. NoLeak NoLeakH2 V2 ~NoLeakH1 {5 29}
 121. NoLeakH1 ReactorUnitSafe l okH1 ~NoLeak {4 20}
 122. ReactorUnitSafe ~LowTemp ~NoLeakH2 ~okH1 {3 19}
-123. LowTemp NoLeakH1 ~V2 {22 23}
 124. ReactorUnitSafe okH1 ~NoLeakH2 ~V2 ~l {19 37}
-125. LowTemp NoLeakH2 okH2 ~V1 ~V2 {9 17}
-126. LowTemp NoLeak l okH2 ~okH1 {18 21}
 127. ReactorUnitSafe V1 l okH1 ~NoLeakH2 ~V2 {16 25}
-128. LowTemp NoLeakH2 {32 34}
 129. NoLeakH1 ReactorUnitSafe ~NoLeak ~V2 ~l {22 33}
-130. NoLeak NoLeakH1 V1 ~NoLeakH2 {4 21}
-131. NoLeak V1 ~NoLeakH2 {2 22}
-132. NoLeak NoLeakH2 ~NoLeakH1 {24 31}
-133. LowTemp NoLeakH1 okH1 ~V1 ~V2 {8 37}
 134. ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~l {29 33}
-135. ~NoLeak ~V2 {30 34}
-136. LowTemp NoLeakH2 okH2 ~l {13 17}
 137. NoLeakH2 ReactorUnitSafe l ~NoLeak {16 32}
 138. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V1 {17 20}
 139. ReactorUnitSafe l ~NoLeakH2 ~V1 ~okH1 {20 21}
 140. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 {19 35}
-141. NoLeakH1 okH1 ~NoLeak ~V2 ~l {30 37}
-142. LowTemp NoLeakH1 ~V2 ~l {7 22}
-143. ~LowTemp ~NoLeakH2 ~okH1 {21 30}
-144. NoLeak V1 okH1 ~okH2 {4 31}
 145. ReactorUnitSafe l ~NoLeakH1 ~NoLeakH2 ~V1 {2 20}
 146. NoLeakH1 ReactorUnitSafe okH1 ~NoLeak ~V2 ~l {1 37}
 147. ReactorUnitSafe ~LowTemp ~NoLeakH2 {19 26}
-148. ~LowTemp ~NoLeakH1 ~okH2 {30 31}
-149. LowTemp NoLeakH1 {22 35}
-150. LowTemp {10 36}
-151. LowTemp NoLeak l okH1 ~NoLeakH2 {2 28}
 152. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {19 23}
-153. LowTemp NoLeakH1 NoLeakH2 okH1 ~l {32 37}
-154. LowTemp NoLeak NoLeakH2 ~NoLeakH1 ~V1 ~l {17 31}
 155. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~l {7 19}
 156. ReactorUnitSafe ~NoLeak ~V2 ~l {13 33}
-157. NoLeak ~okH1 ~okH2 {3 31}
-158. LowTemp NoLeak NoLeakH1 l ~NoLeakH2 {21 28}
-159. NoLeakH2 l okH2 ~NoLeak {18 30}
-160. LowTemp NoLeak V2 l okH1 okH2 {28 29}
-161. LowTemp NoLeak l okH1 ~okH2 {28 31}
 162. ReactorUnitSafe V1 ~LowTemp ~NoLeakH2 {19 22}
-163. V1 okH1 ~LowTemp ~NoLeakH2 {25 30}
 164. ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~l ~okH1 {21 33}
 165. ReactorUnitSafe okH2 ~V2 ~l {101 142}
-166. LowTemp NoLeak okH1 okH2 ~V1 ~V2 {66 125}
 167. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~V2 ~okH2 {84 119}
-168. LowTemp NoLeak l ~NoLeakH1 {9 73}
 169. NoLeak ReactorUnitSafe l okH2 ~NoLeakH2 ~okH1 {88 93}
 170. ReactorUnitSafe okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V1 {80 152}
-171. LowTemp NoLeak NoLeakH2 l okH1 okH2 {44 117}
 172. NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 ~l {142 147}
-173. V1 okH1 okH2 ~LowTemp {24 163}
-174. LowTemp NoLeak NoLeakH1 NoLeakH2 l okH1 okH2 {85 160}
 175. LowTemp NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 {93 112}
 176. LowTemp ReactorUnitSafe okH1 ~V2 ~l {124 128}
 177. ReactorUnitSafe V1 okH1 ~NoLeak ~NoLeakH2 ~V2 {127 156}
 178. ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V1 ~V2 {20 124}
-179. LowTemp l okH1 okH2 {96 105}
 180. NoLeakH2 ReactorUnitSafe l ~NoLeakH1 ~V1 {24 39}
 181. NoLeak ReactorUnitSafe V2 l ~NoLeakH1 {40 55}
-182. LowTemp NoLeak okH1 {66 128}
 183. LowTemp ReactorUnitSafe okH2 ~V2 {38 142}
 184. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~l ~okH1 {57 106}
 185. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~V1 ~l ~okH1 {97 122}
-186. okH2 ~l {97 131}
-187. ~NoLeakH1 ~V1 ~V2 ~l ~okH2 {15 63}
-188. NoLeak V1 okH1 ~NoLeakH2 ~V2 ~l ~okH2 {95 163}
 189. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V1 ~V2 {33 159}
-190. LowTemp NoLeak okH2 ~NoLeakH1 ~okH1 {89 126}
-191. LowTemp NoLeak okH1 okH2 ~NoLeakH1 ~l {76 114}
-192. LowTemp NoLeak NoLeakH1 l ~okH2 {3 161}
 193. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~l ~okH1 ~okH2 {63 78}
 194. NoLeakH1 ReactorUnitSafe okH1 ~NoLeak ~V2 {105 129}
 195. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V2 {13 72}
-196. LowTemp NoLeak NoLeakH1 okH2 ~l {21 113}
 197. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 {39 76}
-198. LowTemp NoLeak okH2 ~NoLeakH2 ~V2 ~l {89 103}
 199. NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 {104 130}
 200. ReactorUnitSafe V1 l okH1 okH2 {114 118}
-201. LowTemp NoLeak l ~okH1 {9 78}
-202. NoLeakH1 l ~LowTemp ~NoLeak ~NoLeakH2 {105 143}
-203. LowTemp NoLeak V1 l okH1 {9 50}
 204. NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~V2 ~l {101 103}
 205. ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l {47 155}
 206. ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V2 {57 105}
 207. ReactorUnitSafe V1 l okH1 ~V2 ~okH2 {4 84}
 208. LowTemp NoLeakH1 ReactorUnitSafe V1 okH1 ~V2 ~okH2 {40 100}
 209. NoLeak ReactorUnitSafe l ~NoLeakH1 ~V1 {132 145}
-210. LowTemp NoLeak okH1 okH2 ~V1 {17 151}
 211. ReactorUnitSafe okH2 ~V1 ~okH1 {104 106}
 212. ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 {45 92}
-213. l ~NoLeakH2 ~V2 ~okH1 {21 110}
 214. LowTemp NoLeakH2 ReactorUnitSafe l okH2 ~NoLeakH1 ~V1 {52 61}
-215. LowTemp NoLeak ~V2 ~l ~okH2 {7 40}
 216. NoLeakH2 ReactorUnitSafe ~NoLeak ~V1 {51 90}
 217. NoLeakH2 ReactorUnitSafe V2 l ~NoLeakH1 ~V1 {20 120}
 218. ReactorUnitSafe okH2 ~NoLeakH1 ~l {1 89}
-219. ~NoLeakH1 ~NoLeakH2 ~V2 ~l {27 43}
-220. NoLeakH1 V1 l okH2 {130 159}
-221. NoLeak V1 V2 {69 157}
 222. LowTemp NoLeakH2 ReactorUnitSafe okH1 okH2 ~V1 ~l {45 79}
-223. LowTemp NoLeak l okH1 ~NoLeakH1 ~V2 {67 82}
 224. NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 okH2 ~NoLeak ~V1 {45 105}
-225. LowTemp NoLeak okH2 ~V2 ~l {62 142}
-226. l ~NoLeakH2 ~okH1 {36 143}
-227. LowTemp NoLeak okH2 ~l {83 136}
 228. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH1 ~V1 ~okH1 {82 139}
 229. LowTemp ReactorUnitSafe ~V1 ~V2 ~okH2 {39 142}
-230. ~NoLeakH1 ~V1 ~okH2 {35 148}
 231. LowTemp ReactorUnitSafe okH2 ~NoLeakH1 ~V2 {91 136}
 232. LowTemp ReactorUnitSafe l okH2 ~V2 ~okH1 {18 93}
 233. NoLeak ReactorUnitSafe V2 ~LowTemp ~NoLeakH1 ~okH1 {120 122}
 234. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {151 155}
 235. ReactorUnitSafe okH1 ~LowTemp ~NoLeak ~l {51 94}
-236. NoLeak ~NoLeakH2 ~V2 ~l {43 103}
 237. NoLeakH2 ReactorUnitSafe l ~NoLeakH1 {6 84}
 238. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH2 ~V2 {124 151}
 239. ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 ~V2 {33 38}
 240. LowTemp ReactorUnitSafe okH1 ~V2 ~l ~okH2 {95 115}
 241. LowTemp NoLeakH2 ReactorUnitSafe okH1 ~V1 {39 113}
-242. LowTemp NoLeak okH2 {34 88}
-243. LowTemp okH2 ~NoLeakH1 ~V2 ~l {89 135}
 244. LowTemp ReactorUnitSafe okH1 okH2 ~V2 {58 85}
-245. LowTemp NoLeakH1 NoLeakH2 okH1 ~V2 {5 85}
 246. LowTemp NoLeakH2 ReactorUnitSafe l ~NoLeakH1 ~V2 {77 84}
-247. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 ~V1 ~V2 ~l {81 95}
 248. LowTemp ReactorUnitSafe okH1 okH2 ~V2 ~l {59 124}
-249. LowTemp NoLeak l okH1 okH2 {77 151}
 250. LowTemp ReactorUnitSafe l ~NoLeakH1 ~V1 {54 92}
 251. NoLeakH2 ReactorUnitSafe l ~LowTemp ~NoLeak ~NoLeakH1 {61 148}
 252. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~V2 ~l ~okH2 {63 144}
-253. NoLeak V1 okH2 ~LowTemp ~NoLeakH2 {102 163}
 254. LowTemp ReactorUnitSafe l okH1 okH2 ~V2 {38 75}
 255. ReactorUnitSafe okH1 okH2 ~LowTemp ~NoLeak ~V2 ~l {101 146}
 256. ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 {10 55}
-257. LowTemp NoLeakH2 l okH2 ~okH1 {126 159}
 258. ReactorUnitSafe V1 ~LowTemp ~okH2 {22 48}
-259. LowTemp NoLeakH1 NoLeakH2 okH1 okH2 {32 85}
-260. NoLeak NoLeakH2 V1 V2 {6 40}
-261. LowTemp NoLeak okH2 ~NoLeakH1 ~NoLeakH2 {52 131}
 262. ReactorUnitSafe l okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {55 152}
 263. NoLeakH1 ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V1 ~V2 ~l {146 164}
 264. ReactorUnitSafe l okH2 ~NoLeak ~NoLeakH1 ~V1 {61 145}
-265. LowTemp NoLeak NoLeakH2 V2 okH1 {108 120}
 266. ReactorUnitSafe okH2 ~l {19 116}
 267. LowTemp NoLeakH2 ReactorUnitSafe okH1 okH2 ~V1 ~V2 ~l {85 134}
-268. l okH2 ~LowTemp ~NoLeak ~NoLeakH1 {43 159}
 269. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~okH2 {48 67}
-270. NoLeakH1 V1 ~NoLeakH2 ~V2 ~l {60 130}
 271. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 {118 154}
-272. NoLeak V2 okH2 ~NoLeakH1 ~V1 {52 53}
 273. ReactorUnitSafe ~NoLeakH2 ~V2 ~l ~okH1 {3 57}
 274. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 {13 140}
-275. LowTemp NoLeak NoLeakH2 okH2 ~NoLeakH1 ~V1 ~okH1 {71 82}
 276. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 ~V2 {37 86}
 277. ReactorUnitSafe V2 l ~NoLeakH1 ~V1 {20 73}
 278. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 okH2 ~NoLeak {4 138}
 279. LowTemp NoLeakH2 ReactorUnitSafe l okH2 ~NoLeakH1 {96 137}
 280. ReactorUnitSafe l okH1 okH2 ~NoLeak {38 105}
 281. NoLeak NoLeakH1 ReactorUnitSafe V1 l ~NoLeakH2 {158 162}
-282. NoLeak V1 ~NoLeakH1 {40 62}
 283. LowTemp ReactorUnitSafe okH1 ~NoLeakH2 ~V2 {9 124}
 284. LowTemp NoLeakH1 ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 {100 131}
 285. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~V2 {63 117}
-286. LowTemp NoLeak NoLeakH2 okH1 okH2 ~l {87 114}
 287. ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~okH2 {39 63}
 288. LowTemp ReactorUnitSafe okH1 okH2 ~V1 ~V2 ~l {68 89}
-289. LowTemp okH2 ~NoLeakH1 ~V1 ~V2 {52 135}
 290. NoLeak ReactorUnitSafe V2 l okH2 ~NoLeakH1 {96 99}
 291. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 okH2 ~NoLeak ~V1 {20 113}
 292. LowTemp NoLeakH1 ReactorUnitSafe okH2 ~V1 ~V2 ~l {85 164}
@@ -294,29 +153,16 @@
 294. ReactorUnitSafe V2 l okH1 okH2 {28 80}
 295. LowTemp ReactorUnitSafe l okH2 {42 96}
 296. ReactorUnitSafe l okH2 ~LowTemp ~NoLeak {61 147}
-297. okH2 ~NoLeakH1 ~V1 {41 62}
-298. LowTemp NoLeak l ~NoLeakH2 {8 131}
-299. LowTemp NoLeak V2 okH2 ~l {78 79}
-300. LowTemp NoLeak ~NoLeakH2 {2 149}
 301. NoLeak ReactorUnitSafe V1 okH2 ~NoLeakH1 ~NoLeakH2 ~l {57 109}
 302. LowTemp ReactorUnitSafe l okH1 ~NoLeak ~NoLeakH2 ~V2 {91 100}
-303. NoLeak NoLeakH2 ~okH1 {5 102}
-304. LowTemp NoLeak l okH1 ~V2 {49 67}
-305. NoLeakH1 NoLeakH2 okH1 okH2 ~NoLeak ~l {6 141}
 306. LowTemp ReactorUnitSafe l ~NoLeakH2 {92 149}
-307. NoLeak ~NoLeakH1 {2 47}
 308. NoLeak ReactorUnitSafe V1 ~LowTemp ~NoLeakH1 {40 101}
-309. LowTemp NoLeak NoLeakH2 okH2 ~V1 ~okH1 {78 125}
 310. LowTemp ReactorUnitSafe l okH1 okH2 ~V1 {55 133}
-311. LowTemp NoLeak okH1 ~NoLeakH1 ~l {31 79}
 312. LowTemp ReactorUnitSafe l okH1 ~V1 ~V2 ~okH2 {39 133}
-313. NoLeakH2 okH1 okH2 {53 85}
 314. ReactorUnitSafe ~NoLeakH2 ~V2 {104 131}
-315. LowTemp okH1 ~NoLeakH2 ~V1 ~V2 ~l {66 119}
 316. LowTemp ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V1 ~V2 {58 68}
 317. LowTemp ReactorUnitSafe okH1 okH2 ~V1 ~V2 {67 138}
 318. NoLeak ReactorUnitSafe l okH2 ~NoLeakH1 {96 101}
-319. NoLeakH1 l ~NoLeak {30 111}
 320. LowTemp ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~V2 ~l {52 156}
 321. LowTemp ReactorUnitSafe l ~V2 ~okH2 {84 111}
 322. ReactorUnitSafe ~LowTemp {47 147}
@@ -324,26 +170,16 @@
 324. LowTemp ReactorUnitSafe okH2 ~V1 ~V2 ~l ~okH1 {71 115}
 325. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V1 {45 90}
 326. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~l {57 88}
-327. NoLeakH1 okH1 ~NoLeak ~V2 {4 70}
 328. LowTemp ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~V2 {52 115}
 329. ReactorUnitSafe ~l {73 129}
-330. LowTemp NoLeak V2 okH1 {32 66}
 331. NoLeak ReactorUnitSafe V1 V2 l okH1 okH2 ~NoLeakH1 {99 117}
 332. LowTemp NoLeakH2 ReactorUnitSafe l okH2 ~NoLeakH1 ~V1 ~V2 {72 82}
 333. NoLeak ReactorUnitSafe V1 l ~NoLeakH2 ~V2 {91 130}
-334. V1 l okH1 okH2 {25 159}
 335. ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {86 155}
-336. okH1 okH2 {44 163}
-337. NoLeakH2 ~NoLeakH1 ~V2 {59 148}
 338. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l {115 154}
-339. LowTemp NoLeak NoLeakH1 ~NoLeakH2 ~V2 {27 158}
-340. LowTemp NoLeak NoLeakH1 okH2 ~V1 {106 133}
 341. LowTemp NoLeakH2 ReactorUnitSafe l okH1 okH2 ~V1 {55 85}
-342. LowTemp NoLeak l okH2 ~V2 {96 123}
 343. NoLeak ReactorUnitSafe ~NoLeakH2 {66 122}
-344. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 ~V2 {65 85}
 345. NoLeakH1 ReactorUnitSafe V1 okH1 ~NoLeak ~NoLeakH2 ~V2 {127 141}
-346. LowTemp NoLeak NoLeakH1 okH1 {151 153}
 347. ReactorUnitSafe okH1 ~NoLeak ~V2 {124 137}
 348. ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V2 ~okH1 {60 93}
 349. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~V1 {52 101}
@@ -352,101 +188,61 @@
 352. ReactorUnitSafe okH1 ~LowTemp ~NoLeakH1 ~NoLeakH2 {140 163}
 353. NoLeakH1 ReactorUnitSafe l ~NoLeak ~NoLeakH2 ~V2 {93 105}
 354. LowTemp ReactorUnitSafe l okH2 ~NoLeak ~V1 ~okH1 {138 139}
-355. V1 V2 l okH2 {98 109}
 356. NoLeak ReactorUnitSafe l ~NoLeakH1 {38 65}
-357. LowTemp NoLeak okH1 okH2 ~V2 {23 114}
 358. LowTemp NoLeakH2 ReactorUnitSafe okH1 ~V1 ~V2 ~l {63 113}
 359. NoLeak ReactorUnitSafe V2 l ~NoLeakH1 ~V1 {120 145}
 360. NoLeak ReactorUnitSafe V1 ~LowTemp ~NoLeakH2 {25 122}
 361. ReactorUnitSafe okH1 okH2 ~NoLeak ~V1 {53 68}
 362. LowTemp ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {8 155}
-363. LowTemp NoLeak NoLeakH1 okH2 ~V2 ~l {24 103}
-364. LowTemp NoLeakH1 l ~NoLeakH2 ~V1 ~V2 {70 158}
-365. LowTemp okH1 ~NoLeakH2 ~V1 ~V2 {41 67}
 366. LowTemp NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {79 91}
-367. LowTemp l okH1 okH2 ~V1 {52 105}
 368. LowTemp NoLeakH1 ReactorUnitSafe V1 okH1 okH2 ~V2 {116 127}
-369. LowTemp NoLeak NoLeakH2 l okH1 {28 82}
-370. LowTemp NoLeak okH2 ~NoLeakH2 ~V1 ~V2 ~l {71 112}
-371. LowTemp NoLeakH2 okH2 ~NoLeakH1 ~V1 ~l {76 97}
-372. LowTemp okH1 ~NoLeakH2 ~V2 {98 112}
 373. ReactorUnitSafe V1 okH1 ~LowTemp ~okH2 {1 144}
 374. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~l {25 155}
-375. LowTemp NoLeak NoLeakH2 ~V1 ~l {26 154}
 376. LowTemp ReactorUnitSafe okH2 ~NoLeak ~V1 ~V2 ~l ~okH1 {72 164}
 377. NoLeak NoLeakH2 ReactorUnitSafe l okH2 ~NoLeakH1 {82 101}
-378. V2 okH1 okH2 {41 69}
 379. NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 {130 152}
-380. LowTemp NoLeak NoLeakH1 V1 okH1 ~l {37 50}
 381. ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~okH1 {93 134}
-382. LowTemp NoLeak NoLeakH2 okH1 okH2 ~V2 {74 85}
 383. LowTemp ReactorUnitSafe okH1 okH2 ~V1 {29 68}
-384. LowTemp okH1 okH2 ~V1 ~V2 ~l {79 119}
-385. NoLeakH1 okH1 ~NoLeak {4 41}
 386. ReactorUnitSafe ~NoLeakH2 ~V2 ~okH1 {21 115}
 387. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 {25 140}
-388. LowTemp l okH2 ~NoLeakH1 ~V2 {96 135}
-389. LowTemp NoLeak okH2 ~NoLeakH2 ~l {29 103}
-390. LowTemp NoLeak NoLeakH2 l okH1 okH2 ~V2 {85 96}
 391. ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 {25 115}
 392. LowTemp NoLeakH2 ReactorUnitSafe okH1 okH2 {61 79}
 393. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~V1 ~l ~okH1 {45 71}
-394. okH1 okH2 ~l {17 163}
 395. LowTemp ReactorUnitSafe ~NoLeakH1 ~V1 {87 92}
 396. ReactorUnitSafe ~V2 ~l ~okH2 {33 40}
-397. LowTemp okH2 ~V1 ~l ~okH1 {41 71}
 398. LowTemp ReactorUnitSafe l okH1 okH2 {61 66}
 399. ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 {23 147}
 400. LowTemp NoLeak ReactorUnitSafe V1 l okH1 ~NoLeakH1 ~V2 {82 127}
 401. LowTemp NoLeak ReactorUnitSafe l okH1 okH2 ~NoLeakH1 ~NoLeakH2 {117 145}
-402. LowTemp NoLeak NoLeakH1 okH2 ~V2 {21 85}
 403. NoLeak ReactorUnitSafe V1 l okH2 ~NoLeakH2 ~okH1 {126 162}
-404. LowTemp NoLeak NoLeakH1 okH1 okH2 {113 151}
 405. ReactorUnitSafe l okH1 ~okH2 {28 48}
 406. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH1 ~V1 {39 52}
 407. LowTemp NoLeakH1 ReactorUnitSafe okH2 ~V1 ~V2 ~l ~okH1 {71 129}
 408. ReactorUnitSafe l ~LowTemp ~NoLeakH1 {53 84}
-409. okH1 ~LowTemp ~NoLeak ~V2 ~l ~okH2 {141 148}
 410. NoLeakH1 ReactorUnitSafe okH2 ~l {106 146}
-411. okH1 ~okH2 {108 148}
 412. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 {48 52}
 413. ReactorUnitSafe okH1 ~LowTemp ~NoLeak ~V2 ~l ~okH2 {146 148}
-414. LowTemp NoLeak NoLeakH2 okH1 okH2 ~V1 ~V2 ~l {76 85}
 415. NoLeak ReactorUnitSafe l okH2 ~NoLeakH2 {114 139}
 416. ReactorUnitSafe okH2 ~LowTemp ~okH1 {1 102}
 417. ReactorUnitSafe okH1 ~LowTemp ~NoLeak ~NoLeakH2 ~V2 {70 94}
-418. LowTemp NoLeakH1 okH1 ~NoLeak ~V1 ~V2 {37 90}
-419. LowTemp NoLeak V1 l okH2 ~NoLeakH2 {21 117}
 420. NoLeakH2 ReactorUnitSafe ~l {120 129}
 421. ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V2 ~l {58 129}
-422. NoLeak V2 {12 78}
-423. okH2 ~V1 ~okH1 {70 106}
 424. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~l ~okH2 {48 112}
 425. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH1 ~V2 {84 96}
 426. ReactorUnitSafe okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~l {134 162}
 427. LowTemp ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 ~V2 {138 152}
-428. NoLeak NoLeakH1 V1 V2 {3 50}
-429. NoLeak V1 ~LowTemp ~NoLeakH2 ~okH2 {130 148}
 430. LowTemp ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 {25 107}
 431. ReactorUnitSafe ~NoLeakH1 ~V2 ~l ~okH2 {27 48}
 432. NoLeakH1 ReactorUnitSafe V2 l okH1 okH2 {88 121}
-433. LowTemp NoLeak NoLeakH2 V2 l okH1 {5 160}
 434. ReactorUnitSafe l ~NoLeakH2 ~V1 {86 139}
-435. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~l {43 89}
 436. ReactorUnitSafe l ~NoLeakH2 ~V2 {127 139}
 437. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 ~NoLeak {118 153}
 438. ReactorUnitSafe ~LowTemp ~NoLeakH2 ~V2 ~l {124 143}
 439. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~V1 ~V2 ~l {124 154}
-440. LowTemp NoLeak okH1 okH2 ~V1 ~V2 ~l {37 52}
-441. ~NoLeakH2 ~V2 ~l {60 83}
 442. NoLeakH1 ReactorUnitSafe V1 V2 l okH1 okH2 {69 121}
-443. NoLeak ~NoLeakH1 ~V1 {52 148}
-444. l ~NoLeakH1 {43 49}
 445. NoLeakH1 ReactorUnitSafe V1 okH1 ~l {50 146}
-446. l ~NoLeakH1 ~NoLeakH2 ~V2 {15 91}
 447. NoLeakH2 ReactorUnitSafe V1 l okH1 okH2 {114 137}
 448. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~l ~okH1 {57 78}
-449. LowTemp NoLeak NoLeakH1 l okH2 {108 126}
 450. LowTemp ReactorUnitSafe okH2 ~NoLeakH1 ~V1 {7 55}
 451. LowTemp ReactorUnitSafe l okH1 ~NoLeak ~V1 ~V2 ~okH2 {39 68}
 452. ReactorUnitSafe okH2 ~NoLeakH1 {6 58}
@@ -457,75 +253,43 @@
 457. NoLeakH2 ReactorUnitSafe ~V1 ~l {45 65}
 458. NoLeakH1 ReactorUnitSafe ~NoLeak ~V1 ~V2 {33 42}
 459. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l {63 74}
-460. okH1 ~NoLeakH2 ~V2 ~l {15 124}
-461. LowTemp NoLeak NoLeakH1 NoLeakH2 V2 okH1 okH2 {50 81}
-462. ~NoLeakH1 ~NoLeakH2 ~V2 {2 135}
 463. NoLeak ReactorUnitSafe V1 V2 ~LowTemp ~NoLeakH2 {50 122}
-464. ~LowTemp ~okH1 ~okH2 {3 148}
 465. ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {55 57}
 466. ReactorUnitSafe V1 okH1 okH2 ~LowTemp {4 101}
 467. ReactorUnitSafe okH2 {101 149}
-468. NoLeakH1 ~NoLeakH2 ~V2 ~l {30 103}
 469. LowTemp NoLeakH1 ReactorUnitSafe l ~NoLeakH2 ~V2 {28 93}
 470. ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {38 124}
-471. V1 okH1 okH2 ~l {60 69}
-472. NoLeak ~NoLeakH1 ~okH1 {31 102}
-473. LowTemp NoLeak V1 okH1 okH2 ~l {4 89}
 474. NoLeakH2 ReactorUnitSafe V1 V2 l okH1 okH2 {61 69}
 475. NoLeakH2 ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~V2 {84 97}
 476. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~l {53 129}
 477. LowTemp ReactorUnitSafe l okH2 ~NoLeakH1 ~V2 {96 107}
 478. LowTemp ReactorUnitSafe V1 okH1 okH2 ~V2 {117 156}
-479. NoLeak ~NoLeakH2 ~V2 {67 143}
-480. NoLeakH1 V2 l {78 105}
-481. NoLeakH2 l okH2 ~okH1 {102 159}
 482. ReactorUnitSafe l ~NoLeak ~NoLeakH1 ~V1 {137 145}
 483. LowTemp NoLeakH1 ReactorUnitSafe ~V1 {139 153}
-484. LowTemp okH2 ~NoLeakH1 ~V1 ~V2 ~l {74 119}
-485. NoLeak V1 okH1 ~NoLeakH2 ~V2 ~l {112 163}
 486. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~V2 ~l {63 114}
 487. NoLeakH1 ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V1 ~V2 {68 147}
 488. ReactorUnitSafe okH1 okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~l {53 124}
 489. ReactorUnitSafe l ~NoLeakH2 ~okH1 {21 118}
 490. LowTemp ReactorUnitSafe V1 l okH1 okH2 ~V2 {18 127}
-491. NoLeak V2 l okH2 ~NoLeakH2 {143 160}
-492. LowTemp NoLeak V2 okH2 {35 109}
 493. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~V2 {124 126}
 494. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeak {56 137}
-495. LowTemp okH1 okH2 ~V2 {112 159}
 496. LowTemp ReactorUnitSafe okH1 ~V1 ~V2 ~l {51 112}
-497. LowTemp NoLeak NoLeakH1 NoLeakH2 V2 ~l {78 153}
 498. ReactorUnitSafe V2 ~LowTemp {26 99}
-499. LowTemp NoLeak NoLeakH1 V1 okH1 {50 75}
 500. NoLeakH2 ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~okH2 {39 51}
 501. ReactorUnitSafe l okH1 ~NoLeak ~NoLeakH2 {92 121}
-502. LowTemp NoLeak NoLeakH2 V2 okH1 okH2 ~l {29 153}
-503. NoLeakH2 ~NoLeak ~l {32 60}
 504. LowTemp ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~okH1 {21 64}
 505. LowTemp ReactorUnitSafe V2 l okH1 okH2 ~V1 {55 108}
-506. LowTemp NoLeak NoLeakH1 l okH2 ~V1 ~V2 {125 158}
-507. LowTemp NoLeak NoLeakH2 okH1 ~V1 {17 161}
 508. NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~l {19 79}
-509. ~NoLeak {10 98}
-510. NoLeak l okH2 ~NoLeakH1 ~NoLeakH2 ~okH1 {43 126}
 511. LowTemp ReactorUnitSafe V1 okH1 ~V2 {56 127}
 512. NoLeak ReactorUnitSafe l okH1 ~NoLeakH1 ~NoLeakH2 ~okH2 {19 161}
 513. NoLeakH2 ReactorUnitSafe okH1 okH2 {85 99}
-514. LowTemp NoLeakH1 NoLeakH2 okH1 okH2 ~NoLeak {105 116}
-515. NoLeakH1 V1 ~LowTemp ~NoLeakH2 {3 163}
 516. ReactorUnitSafe V2 ~LowTemp ~okH1 {32 122}
-517. LowTemp okH2 ~NoLeakH1 ~V1 {76 90}
 518. ReactorUnitSafe l okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 {80 91}
-519. LowTemp NoLeakH1 NoLeakH2 okH1 ~V1 {32 133}
-520. LowTemp NoLeak NoLeakH2 okH1 okH2 ~V1 {62 81}
 521. NoLeak ReactorUnitSafe ~NoLeakH1 {58 120}
 522. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~V1 {134 161}
 523. NoLeakH1 ReactorUnitSafe ~NoLeak {1 149}
 524. LowTemp ReactorUnitSafe ~NoLeakH2 ~V2 ~l {58 142}
 525. ReactorUnitSafe ~okH2 {40 46}
-526. NoLeakH2 V1 l {40 159}
-527. okH1 okH2 ~LowTemp ~NoLeak ~l {97 163}
-528. NoLeakH1 okH2 ~l {113 143}
 529. NoLeak ReactorUnitSafe l ~NoLeakH1 ~okH2 {39 40}
 530. NoLeakH1 ReactorUnitSafe okH1 ~NoLeak {4 46}
 531. ReactorUnitSafe ~NoLeakH2 ~V2 ~l {2 129}
@@ -535,839 +299,463 @@
 535. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~okH1 {139 155}
 536. LowTemp NoLeak ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~l ~okH2 {63 103}
 537. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe ~NoLeak {42 56}
-538. LowTemp NoLeak NoLeakH2 okH1 ~V2 ~l {37 132}
 539. ReactorUnitSafe l ~NoLeak ~NoLeakH2 {42 92}
 540. ReactorUnitSafe V2 okH2 ~LowTemp {1 88}
 541. LowTemp ReactorUnitSafe l okH2 ~NoLeakH1 ~V1 {18 140}
 542. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~l {6 156}
-543. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 {81 144}
-544. okH2 ~NoLeakH1 ~V1 ~l {2 97}
-545. LowTemp NoLeak okH2 ~NoLeakH1 ~V1 ~V2 {2 125}
 546. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~NoLeakH2 ~V2 {92 156}
 547. LowTemp NoLeakH1 ReactorUnitSafe okH1 okH2 ~V2 ~l {79 129}
-548. LowTemp NoLeakH1 NoLeakH2 okH1 {4 54}
 549. NoLeakH1 ReactorUnitSafe V2 l {78 121}
 550. ReactorUnitSafe okH1 ~NoLeak ~V1 ~V2 ~okH2 {68 148}
 551. LowTemp ReactorUnitSafe ~V2 ~okH1 {56 93}
-552. NoLeak V1 okH1 ~NoLeakH1 {31 114}
 553. LowTemp ReactorUnitSafe ~V2 ~okH2 {84 142}
 554. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 ~V2 ~l {67 129}
 555. NoLeakH2 ReactorUnitSafe l ~NoLeak ~NoLeakH1 ~V1 {39 61}
-556. LowTemp NoLeakH1 NoLeakH2 okH2 ~NoLeak ~V1 {90 116}
-557. okH2 ~V1 ~l ~okH1 {17 143}
-558. LowTemp NoLeak NoLeakH1 okH1 ~V2 ~okH2 {142 161}
 559. LowTemp NoLeak ReactorUnitSafe V2 okH1 okH2 ~NoLeakH1 ~V1 {55 79}
-560. NoLeak V2 okH1 okH2 ~NoLeakH1 ~l {53 79}
-561. LowTemp NoLeak okH1 ~l {11 79}
 562. NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 ~l {21 124}
 563. NoLeakH1 ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 ~l {37 94}
-564. NoLeakH2 ~NoLeak {32 135}
 565. ReactorUnitSafe V1 V2 okH1 okH2 ~LowTemp {6 94}
 566. ReactorUnitSafe l okH2 ~okH1 {3 38}
-567. LowTemp NoLeak NoLeakH1 V1 okH1 okH2 ~V2 {25 85}
-568. l okH2 ~NoLeakH1 ~V1 {62 90}
 569. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l {132 155}
-570. LowTemp NoLeakH1 l ~NoLeakH2 ~V1 {41 158}
-571. LowTemp NoLeak ~NoLeakH1 ~l {31 89}
-572. NoLeak l ~NoLeakH1 {43 82}
-573. NoLeak V2 okH2 ~NoLeakH1 ~V1 ~l {53 76}
 574. ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 {127 155}
 575. ReactorUnitSafe okH1 okH2 ~LowTemp ~NoLeak ~l {53 146}
-576. LowTemp okH1 okH2 ~V1 ~l {41 79}
 577. LowTemp ReactorUnitSafe l ~V1 ~V2 ~okH2 {39 123}
 578. ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH2 {41 162}
-579. LowTemp NoLeak V2 l ~NoLeakH2 {78 151}
-580. LowTemp NoLeak NoLeakH2 okH2 ~NoLeakH1 {82 89}
 581. LowTemp NoLeak ReactorUnitSafe l okH2 ~NoLeakH2 {117 139}
-582. LowTemp NoLeak okH2 ~NoLeakH1 ~V1 ~okH1 {71 96}
 583. ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V1 ~V2 ~okH1 {60 139}
 584. ReactorUnitSafe l okH2 ~NoLeak ~NoLeakH1 ~V2 {91 159}
 585. LowTemp ReactorUnitSafe l okH1 ~V2 ~okH2 {28 84}
 586. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~l {73 155}
 587. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~V1 ~okH1 {71 139}
-588. V2 l ~NoLeakH1 {73 98}
-589. LowTemp NoLeak okH1 ~okH2 {31 108}
 590. LowTemp NoLeakH2 ReactorUnitSafe okH1 ~V1 ~okH2 {51 161}
-591. LowTemp l okH2 ~NoLeakH1 ~V1 ~V2 {52 110}
-592. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 ~V2 ~l {95 113}
 593. ReactorUnitSafe okH1 ~LowTemp ~NoLeak ~NoLeakH2 {41 94}
 594. NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeakH1 {77 80}
-595. NoLeakH2 okH1 okH2 ~l {97 114}
 596. ReactorUnitSafe V1 l okH1 ~LowTemp ~NoLeak {137 163}
-597. LowTemp okH1 ~V1 ~V2 ~l ~okH2 {41 95}
-598. LowTemp NoLeakH2 l ~NoLeakH1 ~V2 {82 135}
 599. ReactorUnitSafe l okH1 okH2 {28 101}
-600. NoLeakH1 NoLeakH2 okH2 ~NoLeak ~l {30 116}
 601. NoLeak ReactorUnitSafe V1 l okH2 ~NoLeakH1 ~NoLeakH2 {91 109}
 602. LowTemp ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~okH2 {7 39}
 603. ReactorUnitSafe ~NoLeakH2 ~V1 ~okH1 {3 140}
 604. ReactorUnitSafe V2 l okH2 ~V1 {26 55}
-605. LowTemp NoLeak okH1 ~V2 ~okH2 {95 161}
 606. ReactorUnitSafe okH1 okH2 {69 104}
 607. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 {29 58}
 608. NoLeakH2 ReactorUnitSafe ~NoLeak {10 137}
-609. LowTemp NoLeak NoLeakH2 ~l {31 116}
 610. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeak ~V1 {36 51}
-611. NoLeak NoLeakH1 V1 V2 okH2 {6 130}
 612. ReactorUnitSafe okH1 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V2 ~l {155 163}
 613. ReactorUnitSafe ~NoLeak ~V2 ~okH2 {84 129}
-614. NoLeakH1 l ~okH2 {105 157}
-615. LowTemp NoLeak NoLeakH1 okH2 ~V2 ~okH1 {126 142}
 616. LowTemp ReactorUnitSafe ~V2 ~okH1 ~okH2 {107 157}
 617. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 {37 139}
 618. LowTemp NoLeakH1 ReactorUnitSafe l okH1 okH2 {100 160}
 619. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~l ~okH1 {71 101}
-620. NoLeakH2 V2 okH1 okH2 ~V1 {53 81}
-621. NoLeak okH1 okH2 ~NoLeakH1 ~NoLeakH2 {53 67}
 622. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l ~okH1 {63 71}
-623. NoLeak NoLeakH1 V1 okH2 {3 114}
 624. LowTemp ReactorUnitSafe l okH1 ~NoLeakH2 {66 118}
-625. LowTemp NoLeak NoLeakH1 l okH1 okH2 ~V2 {117 133}
 626. LowTemp ReactorUnitSafe ~NoLeakH1 ~V2 ~okH2 {27 84}
 627. NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~V1 ~l ~okH1 {71 147}
 628. LowTemp ReactorUnitSafe okH1 ~V1 ~V2 ~l ~okH2 {37 63}
 629. ReactorUnitSafe V1 ~NoLeakH2 ~V2 ~l {27 162}
 630. NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 {52 94}
-631. LowTemp NoLeak NoLeakH2 okH1 okH2 ~V1 ~l {81 154}
 632. LowTemp ReactorUnitSafe ~NoLeakH1 ~V2 ~l {56 58}
 633. NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 ~V2 ~l {83 146}
 634. NoLeak ReactorUnitSafe V2 l okH1 ~NoLeakH1 {86 120}
 635. LowTemp NoLeakH1 ReactorUnitSafe l okH2 ~V2 {100 126}
 636. LowTemp ReactorUnitSafe l okH1 okH2 ~NoLeak ~V1 {55 100}
-637. LowTemp NoLeak ~V2 ~okH2 {31 123}
-638. LowTemp l okH2 ~V2 ~okH1 {126 135}
-639. LowTemp l okH2 ~NoLeakH1 ~V1 {52 90}
 640. ReactorUnitSafe ~V1 ~V2 ~l ~okH2 {26 63}
-641. V1 l okH1 {50 110}
-642. LowTemp ~NoLeak ~V1 ~V2 {15 64}
-643. NoLeak V1 V2 ~NoLeakH1 {120 131}
 644. LowTemp NoLeakH1 ReactorUnitSafe okH2 ~V2 ~okH1 {126 129}
-645. LowTemp NoLeak NoLeakH2 ~V1 ~l ~okH1 {17 157}
 646. NoLeak ReactorUnitSafe V2 l ~NoLeakH1 ~V1 ~okH1 {120 139}
-647. V2 okH2 ~LowTemp {26 53}
 648. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 {61 134}
 649. ReactorUnitSafe l okH2 ~NoLeak ~V2 ~okH1 {61 93}
 650. LowTemp NoLeakH1 ReactorUnitSafe okH1 okH2 ~V2 {68 114}
 651. NoLeak ReactorUnitSafe V1 V2 okH2 ~LowTemp ~NoLeakH2 {69 122}
-652. LowTemp NoLeak l okH1 okH2 ~V2 {75 96}
 653. ReactorUnitSafe okH1 okH2 ~NoLeak ~V1 ~V2 ~l {97 124}
 654. NoLeakH1 ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V2 {93 141}
 655. NoLeak ReactorUnitSafe l okH1 ~NoLeakH1 ~NoLeakH2 {25 145}
 656. NoLeakH2 ReactorUnitSafe V2 ~NoLeakH1 ~V1 {54 99}
-657. NoLeakH2 ~NoLeakH1 ~V1 ~V2 {70 132}
-658. LowTemp NoLeak ~V2 ~l {95 102}
-659. LowTemp NoLeak ~NoLeakH2 ~V2 {23 131}
-660. LowTemp NoLeak NoLeakH2 ~NoLeakH1 ~l {13 154}
 661. LowTemp NoLeakH2 ReactorUnitSafe okH1 ~V2 ~okH2 {95 137}
 662. ReactorUnitSafe okH1 ~NoLeakH2 ~V2 {23 94}
 663. ReactorUnitSafe l okH1 ~NoLeak ~NoLeakH2 ~V2 {58 105}
-664. l ~NoLeakH2 ~V1 ~okH1 {8 143}
-665. l okH1 ~LowTemp ~NoLeak ~NoLeakH2 {90 163}
 666. LowTemp NoLeakH1 ReactorUnitSafe okH1 okH2 ~V1 ~V2 ~l {68 79}
-667. NoLeakH1 okH1 okH2 ~l {88 141}
 668. ReactorUnitSafe okH2 ~V2 {59 147}
 669. LowTemp ReactorUnitSafe okH2 ~V1 ~okH1 {17 139}
-670. LowTemp okH2 ~V1 ~V2 ~l ~okH1 {71 119}
 671. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeak ~V2 {16 142}
-672. NoLeak V1 V2 okH1 ~NoLeakH1 {25 120}
-673. LowTemp NoLeak NoLeakH1 ~V1 ~V2 ~okH2 {133 157}
 674. LowTemp NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 {86 89}
 675. NoLeakH2 ReactorUnitSafe V2 l okH2 ~okH1 {61 78}
 676. ReactorUnitSafe l ~LowTemp ~NoLeak ~NoLeakH1 {16 99}
 677. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~okH2 {39 57}
-678. LowTemp NoLeakH1 NoLeakH2 {56 111}
-679. LowTemp NoLeak okH1 okH2 ~NoLeakH1 ~NoLeakH2 {29 67}
 680. LowTemp ReactorUnitSafe l okH2 ~NoLeak ~NoLeakH1 ~V1 {92 138}
-681. LowTemp NoLeak NoLeakH2 okH1 okH2 {29 85}
-682. NoLeakH1 NoLeakH2 okH1 ~NoLeak ~l {30 153}
-683. LowTemp NoLeak l okH2 ~NoLeakH2 {102 151}
-684. LowTemp NoLeak NoLeakH1 okH1 okH2 ~NoLeakH2 {103 160}
 685. LowTemp NoLeakH1 ReactorUnitSafe l okH2 ~V1 {81 139}
 686. ReactorUnitSafe okH1 okH2 ~V2 ~l {62 146}
 687. LowTemp ReactorUnitSafe l okH1 ~NoLeakH2 ~V2 {75 91}
-688. LowTemp NoLeak NoLeakH2 l okH1 okH2 ~V1 {125 160}
-689. LowTemp NoLeak V1 okH2 ~l {22 89}
 690. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH1 ~V2 ~okH1 {84 126}
 691. NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 {54 80}
-692. NoLeakH1 V1 ~NoLeakH2 ~V2 {130 135}
-693. NoLeak V2 ~LowTemp ~NoLeakH1 {43 120}
 694. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~V2 ~l {124 153}
 695. ReactorUnitSafe okH1 okH2 ~NoLeak ~V1 ~V2 {68 101}
 696. NoLeak ReactorUnitSafe V1 okH2 ~NoLeakH1 ~NoLeakH2 {74 162}
-697. V2 ~LowTemp ~okH1 {32 143}
-698. NoLeakH1 ~NoLeakH2 ~okH1 {143 149}
 699. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~l ~okH1 {48 71}
 700. NoLeakH1 ReactorUnitSafe V1 V2 l okH1 {50 121}
-701. LowTemp NoLeakH2 ~NoLeak ~V1 {87 98}
-702. LowTemp NoLeak okH2 ~NoLeakH2 ~V1 {71 151}
-703. NoLeakH2 ~NoLeakH1 ~V1 {41 132}
-704. LowTemp NoLeak ~NoLeakH2 ~V2 ~l {21 112}
-705. LowTemp NoLeak okH1 ~V1 ~V2 ~okH2 {31 133}
-706. NoLeak okH2 ~NoLeakH2 ~V1 ~l ~okH1 {71 143}
 707. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~l ~okH2 {95 99}
 708. LowTemp NoLeak ReactorUnitSafe l okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {117 152}
-709. NoLeak NoLeakH2 V1 okH1 {24 144}
 710. NoLeakH1 ReactorUnitSafe V1 l ~NoLeakH2 {42 131}
-711. NoLeak NoLeakH2 {26 132}
 712. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~V2 {72 132}
-713. NoLeakH2 okH1 ~V2 {85 148}
 714. LowTemp NoLeakH2 ReactorUnitSafe V2 okH1 okH2 ~V1 {55 153}
 715. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V2 {61 156}
 716. ReactorUnitSafe ~V1 ~l ~okH1 {33 78}
-717. okH2 ~NoLeakH1 ~V1 ~V2 ~l {62 119}
 718. LowTemp ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l {128 155}
 719. ReactorUnitSafe okH1 ~NoLeak ~V1 ~V2 ~l ~okH2 {63 141}
 720. LowTemp ReactorUnitSafe okH1 ~NoLeakH2 ~V2 ~l {66 156}
 721. LowTemp ReactorUnitSafe okH1 ~V1 ~l {51 66}
 722. ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V2 ~l {57 146}
-723. ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~l {7 43}
 724. ReactorUnitSafe l ~V2 ~okH1 ~okH2 {16 157}
 725. ReactorUnitSafe okH2 ~NoLeakH1 ~V2 ~l {24 57}
 726. LowTemp ReactorUnitSafe okH1 ~V1 {145 153}
 727. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {20 155}
-728. l okH1 ~okH2 {30 161}
 729. ReactorUnitSafe l okH2 ~NoLeakH1 ~V1 {20 62}
 730. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~V2 ~okH2 {40 68}
-731. NoLeak okH2 ~NoLeakH2 ~l {79 143}
-732. NoLeakH1 V1 l okH1 ~NoLeakH2 {25 105}
-733. LowTemp NoLeak V2 {73 149}
-734. LowTemp okH1 ~V1 ~V2 ~okH2 {90 95}
-735. NoLeakH2 ~NoLeakH1 ~V1 ~l ~okH2 {87 148}
 736. ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 {53 107}
-737. LowTemp NoLeak NoLeakH1 l okH2 ~V1 {44 158}
 738. NoLeakH2 ReactorUnitSafe l okH1 {121 132}
 739. ReactorUnitSafe okH1 okH2 ~l {37 80}
 740. NoLeak ReactorUnitSafe l ~NoLeakH2 {19 158}
-741. V2 l okH1 {73 105}
-742. NoLeak NoLeakH2 l ~NoLeakH1 ~okH2 {82 148}
 743. ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {86 134}
 744. LowTemp NoLeak NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 {55 154}
 745. ReactorUnitSafe ~NoLeakH1 ~V1 {19 54}
-746. LowTemp NoLeak V2 l okH1 {65 160}
 747. LowTemp ReactorUnitSafe l okH1 ~V1 ~okH2 {46 161}
 748. NoLeakH1 ReactorUnitSafe V1 l okH1 ~okH2 {42 144}
 749. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe ~NoLeak ~V2 {137 142}
-750. LowTemp NoLeak okH2 ~NoLeakH2 ~V2 {67 102}
-751. V2 l okH1 okH2 {29 105}
 752. NoLeakH2 ReactorUnitSafe okH2 ~l {101 116}
 753. LowTemp ReactorUnitSafe ~NoLeakH2 ~V2 {58 149}
 754. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V2 ~okH2 {84 156}
-755. LowTemp NoLeakH1 NoLeakH2 okH1 okH2 ~NoLeak ~V2 {18 141}
-756. LowTemp NoLeak okH1 ~NoLeakH2 ~V2 ~okH2 {95 151}
 757. LowTemp ReactorUnitSafe okH1 ~NoLeakH2 ~V1 ~V2 ~l {37 155}
 758. NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 ~l {112 162}
 759. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~NoLeakH1 ~V1 {70 80}
 760. ReactorUnitSafe l okH2 {101 111}
 761. ReactorUnitSafe l okH2 ~NoLeak ~V1 ~okH1 {139 159}
 762. NoLeakH2 ReactorUnitSafe okH1 ~l {48 113}
-763. LowTemp NoLeak okH1 ~NoLeakH1 ~V1 {151 154}
-764. LowTemp NoLeakH1 l ~NoLeakH2 {98 158}
-765. LowTemp NoLeak NoLeakH1 ~NoLeakH2 {3 66}
-766. NoLeak ~NoLeakH1 ~V1 ~l {43 154}
 767. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~NoLeak {118 136}
 768. ReactorUnitSafe okH2 ~NoLeak ~V2 {72 162}
-769. LowTemp NoLeak l okH1 {49 151}
 770. NoLeak ReactorUnitSafe ~NoLeakH1 ~l {57 120}
 771. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeak ~V1 ~V2 {11 72}
 772. LowTemp NoLeak NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 ~okH1 {93 103}
 773. ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH1 ~l {99 156}
-774. NoLeakH1 ~NoLeakH2 ~V2 {70 130}
 775. NoLeakH2 ReactorUnitSafe V1 l ~okH2 {40 137}
 776. ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~V2 {19 125}
 777. ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V2 {42 57}
-778. LowTemp NoLeakH2 ~NoLeakH1 ~V1 ~l {41 154}
-779. V1 okH1 ~l {50 60}
-780. LowTemp NoLeak NoLeakH1 l {49 158}
 781. ReactorUnitSafe V2 l okH1 okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 {55 163}
 782. ReactorUnitSafe l ~LowTemp ~NoLeakH2 {86 143}
 783. ReactorUnitSafe okH1 {54 94}
-784. NoLeak okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~l {43 79}
-785. LowTemp NoLeak NoLeakH2 okH2 ~V1 ~l {116 154}
 786. NoLeak ReactorUnitSafe V2 l ~NoLeakH2 {78 86}
 787. LowTemp NoLeak NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~okH1 {103 139}
-788. LowTemp NoLeak V1 okH1 ~l {69 95}
 789. NoLeak ReactorUnitSafe V1 l okH1 ~NoLeakH2 ~okH2 {161 162}
-790. LowTemp NoLeak NoLeakH1 V1 okH2 ~l {116 131}
-791. LowTemp NoLeakH1 NoLeakH2 okH1 ~NoLeak ~V1 {90 153}
 792. LowTemp ReactorUnitSafe okH2 ~V1 ~V2 ~l {116 152}
-793. LowTemp NoLeak okH1 okH2 ~V2 ~l {37 89}
 794. NoLeak ReactorUnitSafe V1 l okH1 okH2 ~NoLeakH1 ~NoLeakH2 {94 96}
-795. LowTemp NoLeak NoLeakH2 V2 okH1 okH2 {136 160}
-796. LowTemp NoLeak NoLeakH2 V1 ~l {40 136}
 797. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {57 96}
-798. LowTemp NoLeakH1 l okH2 {105 126}
-799. V1 ~NoLeakH2 ~V2 {131 135}
-800. V2 okH2 ~LowTemp ~okH1 {30 106}
-801. LowTemp NoLeak l okH1 okH2 ~V1 ~V2 {96 133}
-802. ~LowTemp ~NoLeakH1 {43 47}
 803. ReactorUnitSafe l ~NoLeak ~NoLeakH2 ~V1 {42 145}
-804. NoLeak V1 okH2 {14 109}
 805. LowTemp ReactorUnitSafe okH1 ~NoLeakH2 ~V1 ~V2 {67 104}
 806. LowTemp NoLeakH1 ReactorUnitSafe okH2 ~V2 {126 146}
 807. ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V1 ~V2 ~l {129 140}
 808. NoLeakH1 ReactorUnitSafe V1 l okH1 ~NoLeakH2 {25 42}
-809. LowTemp NoLeak NoLeakH1 NoLeakH2 okH2 {113 126}
 810. ReactorUnitSafe okH1 ~V2 ~l ~okH2 {31 146}
 811. NoLeakH1 ReactorUnitSafe okH1 okH2 {81 162}
 812. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~V1 {55 103}
 813. ReactorUnitSafe okH2 ~V1 ~V2 ~l ~okH1 {24 164}
 814. NoLeak ReactorUnitSafe l ~NoLeakH2 ~okH2 {39 130}
-815. okH1 ~NoLeakH2 {30 66}
 816. NoLeakH2 ReactorUnitSafe l okH2 ~NoLeakH1 {49 101}
 817. LowTemp ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 {54 152}
-818. LowTemp NoLeak NoLeakH1 V1 okH1 okH2 ~l {37 109}
 819. ReactorUnitSafe V1 okH1 ~NoLeakH2 {94 150}
-820. NoLeakH2 okH2 ~NoLeakH1 ~V1 {53 125}
-821. LowTemp NoLeak NoLeakH1 V1 l okH2 {3 117}
 822. ReactorUnitSafe V1 V2 okH2 ~LowTemp {1 109}
-823. LowTemp l okH2 ~NoLeakH1 {74 98}
 824. LowTemp ReactorUnitSafe l ~NoLeakH2 ~V1 {145 149}
-825. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 okH2 {85 88}
 826. ReactorUnitSafe okH2 ~NoLeak ~V1 ~V2 ~l ~okH1 {45 164}
-827. LowTemp NoLeak okH2 ~V2 {59 83}
-828. LowTemp NoLeak NoLeakH1 ~okH2 {108 157}
 829. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~V1 ~okH1 {72 78}
 830. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 {92 112}
 831. LowTemp ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 {123 140}
-832. LowTemp NoLeak NoLeakH1 okH1 ~V2 ~l {67 153}
-833. V1 l okH2 {131 159}
 834. ReactorUnitSafe V1 V2 okH1 ~LowTemp {1 50}
-835. LowTemp NoLeak NoLeakH2 V2 okH2 ~l {116 120}
 836. NoLeakH1 ReactorUnitSafe l ~NoLeakH2 {111 147}
-837. NoLeak V1 okH1 {25 47}
-838. V1 V2 okH1 okH2 ~LowTemp {6 163}
 839. NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {67 101}
-840. LowTemp NoLeak NoLeakH2 okH1 ~V1 ~l {108 154}
-841. LowTemp NoLeak NoLeakH1 okH2 ~V1 ~V2 {102 133}
 842. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH2 ~V1 {139 151}
 843. NoLeak ReactorUnitSafe V1 l okH1 ~NoLeakH2 {50 127}
-844. LowTemp NoLeak l okH2 {12 126}
-845. LowTemp NoLeakH2 okH2 ~NoLeak ~V1 {87 159}
-846. l okH2 ~NoLeakH1 {62 98}
 847. LowTemp ReactorUnitSafe ~V1 ~V2 ~l ~okH1 {56 164}
-848. LowTemp NoLeak NoLeakH1 okH2 ~NoLeakH2 ~V1 ~okH1 {71 158}
-849. NoLeakH2 l ~NoLeak {11 159}
-850. LowTemp NoLeak NoLeakH1 okH1 ~NoLeakH2 ~V2 {111 112}
-851. okH2 ~okH1 {106 135}
 852. ReactorUnitSafe ~LowTemp ~NoLeak ~l {51 162}
-853. NoLeak l okH1 ~NoLeakH1 ~NoLeakH2 ~okH2 {148 151}
 854. NoLeakH1 ReactorUnitSafe V1 okH1 ~V2 ~l ~okH2 {144 146}
 855. NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH1 ~NoLeakH2 ~l {50 57}
 856. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V2 {84 89}
-857. LowTemp NoLeakH1 V1 okH1 okH2 ~V2 {117 141}
 858. ReactorUnitSafe l okH1 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~okH2 {39 163}
-859. LowTemp NoLeakH1 okH2 ~V1 ~V2 ~l {71 141}
 860. ReactorUnitSafe V1 l okH1 ~okH2 {118 144}
-861. LowTemp NoLeak V2 okH1 okH2 ~NoLeakH1 {89 160}
-862. LowTemp NoLeak l ~NoLeakH1 ~okH1 {21 82}
-863. LowTemp NoLeakH1 l okH1 ~NoLeakH2 {105 158}
 864. ReactorUnitSafe V2 okH2 ~V1 {46 88}
 865. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l ~okH1 {132 164}
-866. ~NoLeakH2 ~V1 ~okH1 {21 41}
-867. l okH2 ~V2 ~okH1 {102 110}
 868. ReactorUnitSafe okH2 ~V1 {88 104}
-869. ~NoLeakH2 ~V2 {43 123}
 870. LowTemp NoLeakH1 ReactorUnitSafe okH1 okH2 ~V1 {68 88}
 871. NoLeak ReactorUnitSafe V2 l okH2 ~NoLeakH2 {55 130}
-872. NoLeakH2 l ~NoLeakH1 {110 120}
-873. LowTemp NoLeakH2 okH2 ~NoLeakH1 ~V1 {154 159}
-874. LowTemp NoLeak okH2 ~V2 ~okH1 {21 59}
-875. LowTemp NoLeak ~NoLeakH1 ~V1 ~l {2 87}
-876. LowTemp NoLeakH2 l okH2 ~NoLeakH1 {74 159}
 877. LowTemp ReactorUnitSafe okH1 okH2 {29 100}
 878. ReactorUnitSafe ~NoLeakH2 ~V1 {26 140}
-879. l okH2 {83 159}
 880. NoLeak ReactorUnitSafe l okH1 ~NoLeakH2 ~okH2 {147 161}
-881. NoLeakH2 okH2 ~NoLeak ~V1 {97 159}
-882. NoLeak V1 V2 ~NoLeakH2 {21 50}
-883. LowTemp NoLeak NoLeakH2 ~NoLeakH1 ~V1 ~V2 {9 154}
 884. ReactorUnitSafe V1 okH2 ~LowTemp {22 101}
-885. LowTemp NoLeakH1 NoLeakH2 okH2 {111 116}
-886. NoLeakH1 V1 l okH1 ~okH2 {105 144}
-887. NoLeakH2 ~NoLeak ~V1 ~l {30 87}
 888. ReactorUnitSafe V1 okH2 {109 115}
 889. LowTemp NoLeakH2 ReactorUnitSafe l okH2 ~V1 ~V2 ~okH1 {72 126}
 890. LowTemp ReactorUnitSafe V1 ~NoLeakH2 ~V2 {107 131}
 891. LowTemp NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 {55 76}
 892. ReactorUnitSafe okH2 ~V2 ~l ~okH1 {102 156}
 893. ReactorUnitSafe okH1 okH2 ~NoLeak {94 138}
-894. NoLeak V1 l okH1 okH2 ~NoLeakH1 ~NoLeakH2 {96 163}
-895. LowTemp NoLeak V1 V2 l okH2 {106 117}
 896. NoLeakH2 ReactorUnitSafe V1 l {40 61}
 897. NoLeak ReactorUnitSafe V1 okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~l {57 69}
-898. NoLeak NoLeakH2 V1 V2 okH1 {5 69}
-899. NoLeak ~NoLeakH1 ~l {89 148}
 900. LowTemp ReactorUnitSafe V1 l okH1 ~V2 {127 128}
 901. NoLeakH2 ReactorUnitSafe ~V2 ~l {129 132}
 902. NoLeakH2 ReactorUnitSafe okH1 ~l ~okH2 {48 153}
 903. LowTemp NoLeakH2 ReactorUnitSafe l ~NoLeakH1 ~V1 ~V2 {84 125}
-904. LowTemp NoLeak ~l {56 83}
 905. LowTemp ReactorUnitSafe l okH1 ~NoLeak ~V2 ~okH2 {84 100}
 906. NoLeakH2 ReactorUnitSafe ~LowTemp ~NoLeakH1 {24 48}
 907. ReactorUnitSafe l ~V1 ~okH1 {47 139}
-908. LowTemp NoLeak NoLeakH1 NoLeakH2 okH2 ~l {102 153}
 909. ReactorUnitSafe ~NoLeak {13 46}
-910. ~NoLeakH2 ~V1 ~V2 ~l ~okH1 {21 119}
 911. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V1 {45 111}
 912. NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 ~V2 {133 162}
 913. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~V1 ~l {63 80}
 914. NoLeakH1 ReactorUnitSafe V1 okH2 ~l {109 129}
 915. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~okH1 ~okH2 {84 164}
-916. NoLeakH1 V1 okH1 ~l {50 141}
-917. LowTemp okH2 ~NoLeakH1 ~V2 {89 110}
 918. LowTemp ReactorUnitSafe ~V1 ~V2 ~okH1 {87 93}
-919. NoLeakH2 ~NoLeakH1 ~l {60 120}
 920. NoLeakH2 ReactorUnitSafe ~NoLeak ~V1 ~V2 {119 137}
 921. NoLeakH1 ReactorUnitSafe V1 l ~NoLeakH2 ~V2 {4 93}
-922. ~NoLeakH1 ~V2 ~okH2 {34 148}
 923. ReactorUnitSafe ~V2 ~okH2 {65 115}
 924. NoLeakH1 ReactorUnitSafe V1 okH1 ~NoLeakH2 {94 108}
 925. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH2 ~V1 ~V2 {152 158}
-926. LowTemp okH2 ~NoLeakH1 ~V1 ~l {41 76}
-927. LowTemp NoLeak okH2 ~okH1 {34 106}
 928. LowTemp NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {55 112}
 929. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 {64 99}
 930. LowTemp ReactorUnitSafe l okH2 ~NoLeak ~V1 ~V2 ~okH1 {72 139}
 931. LowTemp NoLeakH2 ReactorUnitSafe V2 okH2 ~V1 {55 116}
 932. NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeak ~NoLeakH1 ~V1 {99 138}
-933. LowTemp NoLeakH1 ~NoLeakH2 ~V2 ~l {60 103}
-934. LowTemp NoLeak NoLeakH2 okH2 ~l {116 132}
 935. NoLeakH1 ReactorUnitSafe V1 okH1 okH2 ~V2 ~l {114 129}
 936. NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 {67 94}
 937. LowTemp NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 {112 127}
-938. V1 okH1 ~NoLeakH2 ~V2 {34 163}
-939. LowTemp NoLeak l okH2 ~V1 {52 111}
 940. ReactorUnitSafe okH2 ~V2 ~okH1 {59 122}
-941. LowTemp NoLeak NoLeakH2 V1 {40 77}
-942. ~NoLeakH1 ~l {43 56}
-943. NoLeakH2 ~NoLeakH1 {77 148}
 944. NoLeak NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 ~l ~okH1 {130 164}
 945. ReactorUnitSafe l okH2 ~V1 ~okH1 {24 139}
 946. LowTemp ReactorUnitSafe l okH2 ~NoLeakH1 ~V1 ~V2 {92 125}
-947. LowTemp NoLeakH1 okH1 ~V2 ~l ~okH2 {95 141}
-948. LowTemp NoLeakH2 ~V1 ~V2 {9 87}
 949. NoLeak ReactorUnitSafe V1 okH1 ~LowTemp ~NoLeakH1 {48 114}
-950. NoLeak V2 l okH1 okH2 ~NoLeakH1 ~NoLeakH2 {43 160}
-951. V1 l okH1 okH2 ~V2 {110 114}
-952. LowTemp okH1 ~V2 ~l ~okH2 {95 135}
 953. LowTemp ReactorUnitSafe l okH1 okH2 ~V1 ~V2 {81 91}
 954. LowTemp ReactorUnitSafe l okH1 ~NoLeakH2 ~V1 ~V2 {104 151}
 955. ReactorUnitSafe okH2 ~NoLeakH1 ~V1 {35 101}
 956. LowTemp ReactorUnitSafe okH1 okH2 ~V1 ~l {108 134}
 957. NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~V2 {101 125}
-958. NoLeakH2 ~NoLeakH1 ~okH2 {128 148}
 959. LowTemp NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 {73 138}
 960. ReactorUnitSafe l ~NoLeakH1 {19 49}
 961. NoLeak ReactorUnitSafe l ~NoLeakH1 ~okH1 {93 120}
-962. LowTemp l okH1 ~V1 ~okH2 {90 161}
 963. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~l {80 95}
 964. ReactorUnitSafe ~V1 ~okH1 {78 104}
-965. LowTemp NoLeak NoLeakH1 V1 okH2 {77 130}
 966. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 {104 132}
 967. ReactorUnitSafe okH2 ~NoLeak ~V1 ~V2 ~okH1 {159 164}
 968. LowTemp NoLeak ReactorUnitSafe l okH1 ~NoLeakH1 {82 86}
 969. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~okH1 {139 154}
-970. LowTemp NoLeak l okH1 ~NoLeakH1 {66 82}
-971. LowTemp NoLeakH1 NoLeakH2 okH2 ~V2 {18 142}
-972. LowTemp NoLeak okH1 okH2 {4 52}
 973. ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 {47 152}
-974. okH1 ~V2 ~l ~okH2 {119 144}
-975. LowTemp NoLeak NoLeakH1 okH1 okH2 ~V2 {114 133}
 976. LowTemp NoLeakH2 ReactorUnitSafe l okH2 ~V1 ~okH1 {126 138}
 977. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~V2 ~l ~okH2 {95 100}
 978. NoLeakH2 ReactorUnitSafe ~NoLeak ~V2 {137 156}
 979. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 {132 152}
 980. LowTemp ReactorUnitSafe okH1 ~NoLeak ~V1 ~V2 ~l ~okH2 {63 68}
 981. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~l {45 52}
-982. NoLeak V1 okH2 ~NoLeakH2 {62 130}
-983. NoLeak ~NoLeakH1 ~V1 ~l ~okH1 {71 148}
-984. LowTemp NoLeak NoLeakH2 okH1 ~V1 ~V2 {132 133}
 985. ReactorUnitSafe ~NoLeakH2 {35 162}
 986. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V2 ~okH1 {57 126}
 987. LowTemp ReactorUnitSafe okH1 {92 153}
-988. l okH1 ~NoLeakH2 {25 90}
-989. NoLeakH2 V2 l okH2 ~NoLeakH1 {29 159}
-990. LowTemp NoLeak NoLeakH2 V2 okH1 okH2 ~V1 {73 81}
 991. ReactorUnitSafe okH1 okH2 ~V2 {104 114}
-992. LowTemp NoLeak NoLeakH1 NoLeakH2 ~V1 {81 157}
 993. ReactorUnitSafe V2 l okH2 {22 55}
-994. LowTemp NoLeakH2 l ~NoLeakH1 ~V1 {41 82}
 995. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~okH2 {48 128}
 996. ReactorUnitSafe V2 l okH2 ~NoLeak ~V1 {42 55}
-997. LowTemp NoLeakH1 okH2 ~V1 {97 158}
 998. NoLeakH2 ReactorUnitSafe V2 ~NoLeakH1 ~V1 ~l {51 120}
-999. LowTemp NoLeak okH1 okH2 ~V1 ~l {76 108}
 1000. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeak ~V1 ~V2 {20 142}
-1001. LowTemp NoLeak NoLeakH1 okH2 ~V1 ~V2 ~l {37 71}
-1002. LowTemp NoLeak NoLeakH1 NoLeakH2 okH2 ~V1 ~V2 ~l {71 85}
 1003. ReactorUnitSafe ~V1 ~l {87 147}
 1004. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH2 ~V2 ~okH2 {93 161}
 1005. LowTemp NoLeak ReactorUnitSafe V1 okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {57 117}
 1006. NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 ~NoLeak ~V1 {51 121}
-1007. LowTemp NoLeak l okH1 okH2 ~V1 {23 160}
 1008. ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH2 ~V2 ~l {43 129}
 1009. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {29 152}
 1010. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~V1 ~V2 ~okH1 {72 102}
-1011. NoLeakH2 okH1 ~V2 ~l {132 141}
-1012. LowTemp NoLeak V1 l ~okH1 {40 126}
 1013. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 ~NoLeak ~V1 {87 121}
-1014. LowTemp NoLeak NoLeakH2 ~V1 ~okH1 {44 157}
-1015. LowTemp NoLeak ~NoLeakH1 ~V1 ~l ~okH1 {21 154}
-1016. NoLeakH2 l okH1 {105 132}
 1017. NoLeak ReactorUnitSafe V1 l okH1 okH2 ~NoLeakH2 {109 127}
 1018. NoLeakH2 ReactorUnitSafe V2 okH1 okH2 ~l {45 50}
 1019. LowTemp ReactorUnitSafe l okH2 ~V1 {42 52}
 1020. LowTemp NoLeakH1 ReactorUnitSafe l okH2 ~V1 ~V2 {81 93}
-1021. V2 ~V1 ~okH1 {41 78}
 1022. LowTemp NoLeakH2 ReactorUnitSafe l okH1 okH2 {117 138}
 1023. ReactorUnitSafe ~l ~okH1 {78 156}
-1024. LowTemp NoLeakH1 okH1 ~NoLeak ~V2 {111 141}
 1025. ReactorUnitSafe okH2 ~V1 ~V2 ~okH1 {122 125}
 1026. ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V2 {38 156}
-1027. LowTemp NoLeak ~V1 ~okH1 {23 78}
-1028. okH1 okH2 ~V1 {53 133}
-1029. l ~NoLeakH2 {90 131}
-1030. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~l ~okH1 {43 71}
 1031. LowTemp ReactorUnitSafe ~V1 ~V2 ~l ~okH2 {63 149}
 1032. ReactorUnitSafe okH1 ~NoLeak ~V1 {51 86}
 1033. NoLeakH1 ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V2 {86 141}
-1034. LowTemp NoLeak NoLeakH2 okH2 ~okH1 {59 78}
-1035. NoLeak V1 V2 okH2 ~NoLeakH2 {29 130}
 1036. ReactorUnitSafe V2 l okH2 ~NoLeakH1 {13 55}
-1037. LowTemp NoLeak okH1 ~NoLeakH1 ~NoLeakH2 ~l {73 112}
 1038. ReactorUnitSafe l ~okH2 {20 40}
-1039. LowTemp NoLeak V2 ~NoLeakH2 {66 78}
 1040. NoLeakH1 ReactorUnitSafe l ~LowTemp ~NoLeak ~NoLeakH2 {121 143}
-1041. ~NoLeakH1 ~V1 ~V2 ~okH2 {31 70}
-1042. NoLeakH2 ~l {116 148}
 1043. ReactorUnitSafe okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 {58 80}
-1044. NoLeak V1 {130 132}
 1045. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~V2 ~l {72 89}
-1046. l ~NoLeakH1 ~NoLeakH2 ~V1 {15 145}
 1047. LowTemp ReactorUnitSafe l okH1 ~NoLeakH2 ~V1 {20 151}
 1048. ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 ~l {4 57}
 1049. NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH2 ~l {79 147}
-1050. LowTemp NoLeak NoLeakH2 okH2 ~NoLeakH1 ~V1 {96 154}
 1051. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V1 {99 152}
-1052. NoLeakH2 ~NoLeakH1 ~V1 ~l {119 120}
 1053. LowTemp NoLeak NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 ~V2 {124 158}
 1054. LowTemp NoLeakH1 ReactorUnitSafe ~V1 ~V2 ~l {153 164}
-1055. LowTemp NoLeak okH2 ~NoLeakH2 ~l ~okH1 {71 131}
-1056. LowTemp NoLeak NoLeakH1 V1 okH1 okH2 ~NoLeakH2 ~V2 {103 117}
 1057. ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 ~V2 ~l {45 58}
 1058. NoLeakH1 ReactorUnitSafe ~l {78 146}
-1059. okH1 ~NoLeakH2 ~V2 {25 70}
 1060. NoLeakH1 ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 {75 162}
-1061. LowTemp NoLeak NoLeakH2 okH1 okH2 ~NoLeakH1 {117 154}
 1062. NoLeakH1 ReactorUnitSafe V1 ~LowTemp ~NoLeakH2 {3 94}
 1063. LowTemp NoLeak ReactorUnitSafe V1 l okH2 ~NoLeakH2 ~V2 {126 127}
 1064. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH2 ~V2 {93 151}
-1065. LowTemp NoLeakH1 NoLeakH2 ~l {22 87}
-1066. LowTemp NoLeak NoLeakH2 V2 okH1 ~l {50 87}
-1067. LowTemp NoLeak okH1 ~NoLeakH1 ~NoLeakH2 {67 73}
 1068. LowTemp ReactorUnitSafe l ~NoLeakH1 {49 92}
 1069. NoLeak ReactorUnitSafe V1 l ~NoLeakH2 ~V2 ~okH2 {84 130}
-1070. LowTemp NoLeak V1 l {126 144}
 1071. ReactorUnitSafe l okH2 ~NoLeak ~NoLeakH1 ~V1 ~V2 {61 152}
-1072. LowTemp NoLeakH2 okH2 ~NoLeak ~V1 ~V2 {15 72}
-1073. NoLeak okH1 ~NoLeakH1 ~l {154 163}
-1074. LowTemp NoLeak V2 l {73 111}
 1075. LowTemp NoLeakH2 ReactorUnitSafe ~V2 {84 116}
-1076. LowTemp NoLeak NoLeakH2 ~NoLeakH1 ~V1 {23 120}
-1077. LowTemp V1 okH1 okH2 ~V2 {60 117}
-1078. LowTemp NoLeak V1 l ~NoLeakH1 {40 96}
 1079. NoLeakH2 ReactorUnitSafe okH1 ~V2 {48 85}
 1080. ReactorUnitSafe V1 okH2 ~l {109 156}
-1081. LowTemp ~NoLeak ~V2 {15 107}
 1082. LowTemp ReactorUnitSafe okH2 ~NoLeakH1 ~V2 ~l {89 115}
-1083. NoLeakH2 V2 l okH2 ~okH1 {106 159}
-1084. LowTemp NoLeak NoLeakH1 ~V2 ~l ~okH2 {37 157}
 1085. NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~l ~okH1 {71 162}
 1086. ReactorUnitSafe l okH2 ~NoLeak {38 42}
-1087. LowTemp NoLeak NoLeakH1 ~l {37 78}
-1088. LowTemp NoLeak okH1 ~V2 ~l {112 128}
 1089. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 {31 72}
 1090. NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH2 ~l {50 124}
 1091. LowTemp ReactorUnitSafe V2 l okH2 ~V1 {55 111}
 1092. NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 ~l ~okH2 {95 162}
 1093. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~okH2 {91 95}
-1094. LowTemp NoLeak ~NoLeakH1 ~V1 {52 65}
-1095. LowTemp NoLeak NoLeakH2 l ~okH1 {5 126}
 1096. LowTemp ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~l {142 155}
 1097. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~okH2 {95 145}
-1098. LowTemp NoLeakH2 ~NoLeak ~V2 {49 60}
 1099. NoLeakH2 ReactorUnitSafe okH1 ~V2 ~l {132 146}
-1100. LowTemp NoLeak NoLeakH2 l okH1 ~V2 {59 161}
-1101. NoLeak NoLeakH1 l ~NoLeakH2 ~okH1 {143 158}
-1102. V1 V2 okH2 ~LowTemp {30 109}
-1103. LowTemp NoLeakH2 ~V2 {9 56}
-1104. LowTemp NoLeak NoLeakH2 okH1 {136 161}
-1105. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {43 52}
-1106. NoLeakH2 V1 V2 l okH1 okH2 {50 159}
 1107. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~V2 ~l {101 129}
 1108. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V1 ~V2 ~l {68 164}
-1109. LowTemp NoLeak NoLeakH1 V1 okH1 okH2 {75 109}
-1110. LowTemp NoLeak okH1 ~NoLeakH1 ~V1 ~l {66 154}
-1111. LowTemp NoLeak l {102 161}
 1112. ReactorUnitSafe V1 l ~LowTemp ~NoLeakH2 ~V2 {127 143}
 1113. LowTemp ReactorUnitSafe okH2 {131 138}
-1114. NoLeakH2 V2 l okH2 {88 159}
 1115. ReactorUnitSafe l okH2 ~LowTemp ~NoLeak ~NoLeakH1 {16 53}
 1116. NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~l {45 62}
 1117. ReactorUnitSafe l ~LowTemp ~NoLeak ~NoLeakH2 {20 162}
 1118. ReactorUnitSafe okH1 ~okH2 {46 144}
 1119. LowTemp NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH2 {124 160}
-1120. NoLeakH2 l okH2 ~NoLeakH1 {132 159}
 1121. NoLeakH2 ReactorUnitSafe ~l ~okH2 {40 51}
 1122. LowTemp NoLeak ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 {155 158}
 1123. ReactorUnitSafe l okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~okH2 {39 127}
 1124. ReactorUnitSafe ~LowTemp ~NoLeakH1 {11 101}
-1125. LowTemp NoLeak V1 V2 l okH1 {144 160}
 1126. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 ~okH1 {93 142}
 1127. LowTemp NoLeakH1 ReactorUnitSafe l okH1 ~V1 ~V2 ~okH2 {68 161}
 1128. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V2 {107 132}
 1129. LowTemp NoLeakH2 ReactorUnitSafe okH1 ~V1 ~V2 {68 132}
-1130. NoLeakH1 V1 okH1 ~NoLeakH2 ~V2 ~l {130 141}
 1131. NoLeakH1 ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V1 ~V2 {121 164}
-1132. V2 l okH2 ~V1 ~okH1 {90 106}
 1133. LowTemp NoLeakH1 ReactorUnitSafe l okH1 ~NoLeakH2 {42 66}
-1134. NoLeakH2 V2 okH2 ~NoLeakH1 ~l {53 136}
 1135. ReactorUnitSafe ~NoLeakH1 ~V1 ~l {32 155}
 1136. NoLeak ReactorUnitSafe V1 V2 ~LowTemp ~NoLeakH1 {40 80}
-1137. LowTemp NoLeak okH2 ~V1 ~V2 ~okH1 {9 71}
 1138. NoLeakH2 ReactorUnitSafe V2 okH2 ~V1 ~l ~okH1 {45 78}
-1139. l okH1 okH2 {62 105}
-1140. okH1 ~NoLeakH2 ~V1 ~V2 {43 133}
 1141. LowTemp NoLeakH1 ReactorUnitSafe okH2 {130 138}
 1142. NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 ~NoLeakH2 {109 140}
-1143. LowTemp NoLeak NoLeakH2 okH2 {109 125}
 1144. ReactorUnitSafe l okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~okH1 {53 93}
 1145. NoLeak ReactorUnitSafe V1 l okH2 ~NoLeakH2 ~V2 {102 127}
-1146. LowTemp NoLeak ~okH2 {31 149}
 1147. NoLeakH2 ReactorUnitSafe l ~okH1 {61 157}
-1148. NoLeakH1 ~NoLeakH2 ~V2 ~l ~okH1 {142 143}
-1149. LowTemp NoLeak V1 okH1 okH2 {79 117}
 1150. NoLeakH1 ReactorUnitSafe V1 ~NoLeakH2 ~V2 ~l {142 162}
-1151. NoLeak V2 ~LowTemp ~NoLeakH1 ~okH1 {120 143}
 1152. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~l {46 154}
 1153. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {89 145}
 1154. LowTemp NoLeakH2 ReactorUnitSafe l okH1 okH2 ~V2 {72 117}
 1155. ReactorUnitSafe l okH1 ~NoLeak ~NoLeakH2 ~V1 ~V2 {121 152}
-1156. LowTemp okH1 ~NoLeakH2 ~V2 ~l {60 66}
 1157. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~V1 ~V2 ~l {103 134}
-1158. LowTemp NoLeak ~V1 ~l ~okH1 {65 71}
-1159. LowTemp NoLeak NoLeakH1 NoLeakH2 ~l {65 116}
 1160. ReactorUnitSafe V2 ~NoLeakH1 ~V1 {46 73}
-1161. LowTemp NoLeak NoLeakH1 ~V2 ~l {103 128}
 1162. LowTemp NoLeakH1 ReactorUnitSafe ~V2 {103 137}
 1163. ReactorUnitSafe V1 l ~NoLeakH2 ~V2 {22 91}
 1164. NoLeakH1 NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V2 {61 129}
 1165. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH2 ~NoLeak {22 138}
 1166. ReactorUnitSafe V1 l okH1 {32 127}
-1167. LowTemp NoLeakH1 ~NoLeakH2 ~V1 ~V2 {119 158}
 1168. ReactorUnitSafe V2 l okH2 ~LowTemp ~NoLeak {42 80}
-1169. LowTemp NoLeakH1 V1 l okH1 okH2 {105 117}
 1170. NoLeakH1 ReactorUnitSafe ~NoLeak ~V2 {22 104}
-1171. NoLeakH1 V1 okH1 ~V2 ~l ~okH2 {141 144}
 1172. ReactorUnitSafe l okH1 ~NoLeak ~NoLeakH2 ~V1 {105 145}
-1173. LowTemp NoLeakH1 NoLeakH2 okH2 ~NoLeak {98 116}
 1174. NoLeakH2 ReactorUnitSafe l ~okH2 {65 137}
 1175. NoLeak ReactorUnitSafe l ~NoLeakH1 ~NoLeakH2 ~okH1 {73 93}
 1176. NoLeakH1 ReactorUnitSafe okH1 ~l {147 153}
-1177. LowTemp NoLeakH2 l okH1 {82 105}
 1178. LowTemp NoLeakH2 ReactorUnitSafe V2 okH2 {109 138}
 1179. NoLeak ReactorUnitSafe l ~NoLeakH2 ~okH1 ~okH2 {40 139}
 1180. LowTemp NoLeakH2 ReactorUnitSafe okH1 ~V2 {72 144}
 1181. ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V1 ~V2 {42 155}
-1182. LowTemp NoLeak l okH1 okH2 ~NoLeakH2 {67 160}
 1183. NoLeakH1 ReactorUnitSafe ~NoLeakH2 {46 130}
 1184. ReactorUnitSafe ~LowTemp ~okH1 ~okH2 {3 48}
-1185. LowTemp NoLeak NoLeakH2 V1 l okH1 {5 117}
 1186. ReactorUnitSafe V2 okH1 okH2 {46 69}
 1187. ReactorUnitSafe ~LowTemp ~okH2 {1 65}
-1188. NoLeakH1 okH2 ~V1 {81 143}
-1189. LowTemp NoLeak NoLeakH1 ~l ~okH1 {78 142}
 1190. NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 ~l {76 99}
-1191. ~V2 ~okH1 ~okH2 {135 157}
 1192. LowTemp NoLeakH1 ReactorUnitSafe ~V1 ~V2 ~okH2 {68 157}
 1193. ReactorUnitSafe V2 l okH1 {28 99}
 1194. NoLeak ReactorUnitSafe V1 okH2 ~LowTemp ~NoLeakH2 {101 130}
 1195. LowTemp ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~l {136 140}
-1196. LowTemp NoLeak NoLeakH1 okH2 ~V1 ~okH1 {71 111}
 1197. NoLeak ReactorUnitSafe l okH1 ~NoLeakH1 ~okH2 {48 161}
 1198. NoLeakH1 ReactorUnitSafe l ~NoLeakH2 ~okH1 {111 122}
 1199. ReactorUnitSafe V1 l okH1 okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 {53 127}
-1200. NoLeakH2 ~V1 ~l ~okH1 {97 157}
 1201. ReactorUnitSafe V1 l okH1 ~V2 {47 127}
 1202. NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 {108 147}
-1203. ~V2 ~okH2 {40 70}
-1204. NoLeak V2 l okH1 okH2 ~NoLeakH1 {53 160}
-1205. NoLeakH1 l okH1 ~NoLeakH2 {83 105}
 1206. ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH1 ~V1 ~l {19 51}
 1207. LowTemp NoLeakH2 ReactorUnitSafe l ~NoLeak ~NoLeakH1 ~V1 ~V2 {72 84}
 1208. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~l {108 164}
 1209. NoLeak ReactorUnitSafe V2 l okH2 ~NoLeakH1 ~okH1 {99 126}
-1210. LowTemp l okH2 ~V1 ~V2 ~okH1 {70 126}
 1211. ReactorUnitSafe okH2 ~NoLeak ~V1 ~V2 ~l {129 134}
 1212. NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 ~l {80 87}
 1213. ReactorUnitSafe l okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~okH1 {55 93}
 1214. ReactorUnitSafe ~NoLeakH1 ~V2 ~l {47 57}
 1215. LowTemp ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V1 ~V2 ~l {68 155}
 1216. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~l ~okH2 {48 56}
-1217. LowTemp NoLeakH1 NoLeakH2 okH1 ~NoLeak {105 153}
-1218. LowTemp NoLeakH1 l ~NoLeakH2 ~V2 {110 158}
 1219. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~okH1 {58 106}
 1220. NoLeak NoLeakH2 ReactorUnitSafe l ~NoLeakH1 ~okH2 {48 82}
 1221. LowTemp ReactorUnitSafe ~NoLeakH2 ~V2 ~okH1 {21 107}
-1222. ~okH1 {128 143}
 1223. LowTemp NoLeakH1 ReactorUnitSafe l okH1 okH2 ~V2 {68 117}
 1224. NoLeak ReactorUnitSafe V1 ~LowTemp ~NoLeakH2 ~okH2 {122 144}
 1225. ReactorUnitSafe okH1 ~l {37 99}
 1226. ReactorUnitSafe okH2 ~V1 ~l {33 88}
 1227. ReactorUnitSafe okH1 okH2 ~NoLeak ~V2 {38 146}
-1228. LowTemp NoLeak okH1 ~V1 ~V2 ~l {87 112}
 1229. NoLeak ReactorUnitSafe l ~NoLeakH2 ~okH1 {78 93}
-1230. LowTemp NoLeak okH1 ~NoLeakH1 ~V1 ~V2 ~l {112 154}
-1231. LowTemp NoLeak ~V1 ~V2 ~l {71 95}
-1232. LowTemp NoLeak NoLeakH1 ~V1 {78 133}
 1233. LowTemp NoLeakH1 ReactorUnitSafe okH1 okH2 {68 69}
 1234. ReactorUnitSafe okH1 ~V2 ~okH2 {104 144}
 1235. ReactorUnitSafe l ~LowTemp ~NoLeakH1 ~NoLeakH2 {145 162}
 1236. NoLeakH2 ReactorUnitSafe V1 V2 l okH1 {50 137}
-1237. LowTemp NoLeakH2 okH2 ~NoLeak ~V2 {18 60}
-1238. NoLeakH1 ~NoLeak ~V2 {22 70}
 1239. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~l ~okH2 {32 63}
 1240. ReactorUnitSafe okH1 okH2 ~V1 {80 133}
-1241. V2 ~LowTemp ~NoLeakH1 {32 43}
-1242. NoLeak V2 l okH2 ~NoLeakH1 ~okH1 {53 126}
-1243. NoLeak V2 ~NoLeakH1 ~okH1 {29 157}
-1244. LowTemp NoLeakH2 okH2 ~NoLeak {56 159}
-1245. NoLeak V1 okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~l {89 163}
 1246. LowTemp NoLeak ReactorUnitSafe V1 okH1 okH2 ~NoLeakH2 ~V2 {117 124}
 1247. ReactorUnitSafe V2 l okH1 okH2 ~NoLeak ~V1 {55 105}
-1248. NoLeak okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~l ~okH2 {43 95}
 1249. LowTemp ReactorUnitSafe okH2 ~V1 ~l {134 149}
-1250. LowTemp okH1 okH2 ~V2 ~l {60 79}
-1251. LowTemp NoLeak NoLeakH2 {40 44}
 1252. LowTemp NoLeakH2 ReactorUnitSafe V1 l okH1 okH2 {117 137}
 1253. NoLeakH2 ReactorUnitSafe ~NoLeak ~l {1 56}
-1254. LowTemp NoLeak ~V2 {95 126}
-1255. NoLeak ~LowTemp ~NoLeakH1 {43 132}
-1256. LowTemp NoLeak NoLeakH1 okH1 okH2 ~V2 ~l {85 103}
 1257. ReactorUnitSafe ~V1 {54 147}
-1258. NoLeak V1 ~okH1 {40 102}
 1259. ReactorUnitSafe V2 l okH1 ~LowTemp ~NoLeak {99 121}
-1260. LowTemp NoLeak V1 okH1 ~V2 {95 117}
 1261. LowTemp NoLeak NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~okH2 {39 154}
-1262. LowTemp NoLeak NoLeakH2 V1 okH1 okH2 {117 136}
-1263. LowTemp NoLeak NoLeakH1 V1 okH1 ~NoLeakH2 ~l {50 103}
 1264. ReactorUnitSafe okH1 ~V1 ~V2 ~okH2 {48 133}
-1265. NoLeak V1 l okH2 ~NoLeakH2 {117 143}
-1266. NoLeak okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~okH2 {67 148}
-1267. LowTemp NoLeak l ~NoLeakH2 ~okH2 {151 157}
 1268. NoLeak ReactorUnitSafe ~NoLeakH2 ~l {78 124}
 1269. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~okH1 {76 139}
 1270. ReactorUnitSafe l ~NoLeakH1 ~V1 {47 145}
-1271. NoLeakH1 ~l {78 141}
 1272. LowTemp NoLeakH2 ReactorUnitSafe ~V1 ~okH1 {138 157}
 1273. NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 ~l ~okH2 {95 122}
-1274. V1 okH1 okH2 ~V2 {114 135}
 1275. ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~l {12 164}
 1276. LowTemp ReactorUnitSafe l okH2 ~V1 ~okH1 {18 139}
-1277. LowTemp NoLeak okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {96 112}
 1278. NoLeakH1 ReactorUnitSafe l okH2 {102 121}
 1279. ReactorUnitSafe l ~okH1 ~okH2 {118 157}
 1280. ReactorUnitSafe V2 okH1 {99 108}
-1281. l okH2 ~okH1 {98 102}
-1282. LowTemp NoLeak V1 okH2 ~NoLeakH2 ~l {89 130}
 1283. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~l ~okH1 {78 155}
-1284. LowTemp NoLeak V2 l ~okH2 {78 161}
 1285. NoLeakH2 ReactorUnitSafe l ~NoLeak ~NoLeakH1 ~V2 {84 159}
-1286. LowTemp l okH1 okH2 ~V2 {67 159}
-1287. LowTemp NoLeak NoLeakH1 okH2 ~NoLeakH2 ~l ~okH1 {71 130}
-1288. NoLeak V1 l okH1 okH2 ~NoLeakH2 {117 163}
-1289. LowTemp NoLeak NoLeakH1 okH2 {116 158}
 1290. NoLeakH2 ReactorUnitSafe ~V1 ~l ~okH1 {45 157}
-1291. ~NoLeakH2 ~okH1 {143 150}
-1292. LowTemp NoLeak NoLeakH1 okH2 ~l ~okH1 {22 71}
 1293. NoLeak ReactorUnitSafe l okH1 ~NoLeakH1 {101 161}
 1294. NoLeak ReactorUnitSafe V1 l okH1 okH2 ~NoLeakH1 {101 117}
-1295. LowTemp NoLeak okH1 ~V1 ~l {66 87}
 1296. LowTemp NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 ~l {58 103}
-1297. V1 okH1 okH2 ~V2 ~l {60 114}
-1298. NoLeakH2 ~NoLeak ~V1 {32 70}
-1299. LowTemp NoLeak okH2 ~V1 {52 149}
 1300. LowTemp ReactorUnitSafe okH1 ~V2 {87 127}
-1301. V1 ~LowTemp ~okH2 {30 40}
-1302. LowTemp NoLeak okH1 okH2 ~NoLeakH1 {76 117}
-1303. LowTemp NoLeak NoLeakH2 okH1 okH2 ~NoLeakH1 ~l {114 154}
-1304. NoLeakH1 NoLeakH2 okH1 okH2 ~NoLeak ~V2 {30 85}
 1305. LowTemp NoLeakH1 ReactorUnitSafe V1 okH1 {50 100}
-1306. LowTemp NoLeak okH2 ~NoLeakH1 ~V2 {2 59}
-1307. LowTemp NoLeak okH2 ~NoLeakH2 {67 106}
-1308. LowTemp NoLeak NoLeakH1 {75 78}
-1309. NoLeak V2 okH2 ~NoLeakH1 ~V1 ~l ~okH1 {53 71}
-1310. l ~okH2 {40 90}
 1311. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 {64 130}
-1312. NoLeak okH2 {24 83}
-1313. NoLeakH1 ~LowTemp ~NoLeak ~NoLeakH2 ~V2 ~l {141 143}
 1314. NoLeakH1 ReactorUnitSafe V1 okH1 okH2 ~V2 {85 162}
 1315. ReactorUnitSafe l {49 147}
 1316. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V2 {152 162}
-1317. LowTemp NoLeak V1 okH1 ~l ~okH2 {50 95}
 1318. ReactorUnitSafe ~NoLeak ~V1 ~V2 ~okH2 {42 63}
-1319. ~NoLeakH1 ~V1 ~l {73 119}
-1320. NoLeakH1 V1 V2 l okH1 okH2 {105 109}
 1321. NoLeakH1 ReactorUnitSafe V1 l okH1 okH2 {114 121}
-1322. LowTemp NoLeak okH2 ~V1 ~okH1 {8 71}
 1323. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {96 155}
 1324. NoLeakH2 ReactorUnitSafe okH1 okH2 ~l {45 114}
 1325. LowTemp NoLeak ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~l {66 164}
 1326. ReactorUnitSafe l ~LowTemp ~NoLeak ~okH1 {122 137}
 1327. LowTemp NoLeakH1 ReactorUnitSafe l okH1 ~NoLeakH2 ~V1 ~V2 {68 151}
 1328. NoLeak ReactorUnitSafe V1 okH1 okH2 ~NoLeakH2 ~l {109 124}
-1329. LowTemp NoLeak V1 okH1 okH2 ~NoLeakH2 {67 69}
-1330. NoLeak V1 V2 okH2 ~LowTemp ~NoLeakH2 {69 143}
 1331. ReactorUnitSafe okH2 ~NoLeak ~V1 ~okH1 {138 143}
 1332. NoLeak ReactorUnitSafe V1 l ~NoLeakH1 {84 109}
 1333. NoLeak ReactorUnitSafe ~NoLeakH1 ~V2 {58 132}
 1334. NoLeakH2 ReactorUnitSafe okH1 okH2 ~V2 {85 101}
 1335. ReactorUnitSafe ~V2 ~okH1 ~okH2 {115 157}
 1336. LowTemp NoLeakH2 ReactorUnitSafe V2 l okH1 okH2 {137 160}
-1337. NoLeakH1 V1 okH1 okH2 ~l {113 163}
-1338. LowTemp NoLeak NoLeakH1 V2 l {32 158}
-1339. V1 okH2 {109 135}
-1340. LowTemp NoLeakH2 ~NoLeak {56 98}
-1341. LowTemp NoLeakH2 okH1 ~V1 {105 154}
 1342. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V2 {61 142}
 1343. LowTemp ReactorUnitSafe l okH1 ~V1 {54 86}
 1344. LowTemp ReactorUnitSafe okH1 ~V2 ~okH2 {31 100}
-1345. LowTemp l okH1 ~NoLeakH2 ~V1 {90 151}
-1346. NoLeakH2 V2 okH2 ~V1 ~l ~okH1 {97 106}
-1347. LowTemp NoLeak NoLeakH2 okH1 ~V2 {18 95}
 1348. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeak ~V2 {16 56}
-1349. LowTemp NoLeak V1 ~NoLeakH1 ~l {40 89}
-1350. LowTemp NoLeak V2 okH1 okH2 ~NoLeakH1 ~l {50 76}
 1351. NoLeak ReactorUnitSafe V2 l okH1 okH2 ~NoLeakH1 ~NoLeakH2 {25 55}
 1352. LowTemp ReactorUnitSafe l ~NoLeakH2 ~V2 {91 149}
-1353. LowTemp NoLeak NoLeakH2 okH1 ~l {31 113}
-1354. LowTemp NoLeakH1 okH1 ~NoLeakH2 ~V2 {103 105}
-1355. okH2 ~NoLeakH1 {43 77}
-1356. LowTemp NoLeak NoLeakH1 V2 l okH2 {3 160}
 1357. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~l {17 48}
 1358. ReactorUnitSafe V1 l ~V2 ~okH2 {22 84}
 1359. LowTemp NoLeakH2 ReactorUnitSafe {40 138}
-1360. LowTemp NoLeak okH2 ~V1 ~V2 {83 125}
 1361. LowTemp ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 {2 107}
-1362. LowTemp NoLeak NoLeakH2 ~NoLeakH1 ~V2 {31 59}
 1363. NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 okH2 ~NoLeak ~l {1 113}
-1364. ~NoLeakH2 ~V1 ~V2 ~l {83 119}
 1365. ReactorUnitSafe V1 l okH1 okH2 ~V2 {24 127}
 1366. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~NoLeakH1 {80 115}
-1367. NoLeakH2 okH2 ~NoLeak ~V1 ~V2 {30 125}
-1368. okH2 ~V1 ~V2 ~l ~okH1 {102 119}
 1369. ReactorUnitSafe V1 okH1 ~NoLeakH1 ~NoLeakH2 ~V2 {57 127}
-1370. LowTemp NoLeak NoLeakH1 V1 okH1 okH2 ~NoLeakH2 ~l {69 103}
 1371. ReactorUnitSafe V2 l ~LowTemp ~NoLeakH1 ~V1 {55 148}
 1372. NoLeakH2 ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~V2 ~okH2 {63 137}
 1373. LowTemp ReactorUnitSafe l okH1 {137 151}
@@ -1379,138 +767,72 @@
 1379. LowTemp ReactorUnitSafe okH2 ~V2 ~l {57 116}
 1380. LowTemp ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V2 {58 100}
 1381. ReactorUnitSafe l ~NoLeak ~NoLeakH1 {92 137}
-1382. V1 ~LowTemp ~NoLeakH2 {15 162}
 1383. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~l {33 132}
 1384. NoLeakH1 NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~l {6 129}
 1385. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~l {88 155}
-1386. LowTemp NoLeakH2 ~NoLeakH1 ~V2 {60 82}
 1387. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~okH2 {39 56}
-1388. LowTemp NoLeak okH1 ~V1 {54 66}
 1389. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~okH2 {40 140}
-1390. NoLeak V1 ~NoLeakH2 ~okH2 {31 130}
 1391. ReactorUnitSafe V1 l okH1 ~LowTemp ~NoLeakH1 ~NoLeakH2 {99 127}
-1392. LowTemp NoLeak V1 okH1 ~NoLeakH1 {74 144}
-1393. LowTemp NoLeak NoLeakH1 NoLeakH2 V1 okH1 ~l {116 144}
-1394. okH2 ~NoLeakH1 ~V1 ~V2 {43 125}
-1395. LowTemp NoLeak okH1 okH2 ~NoLeakH2 {67 88}
 1396. LowTemp NoLeak NoLeakH1 ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 {103 127}
 1397. ReactorUnitSafe l okH1 ~LowTemp ~NoLeak ~NoLeakH2 {19 121}
-1398. LowTemp NoLeakH1 ~NoLeak ~V1 ~V2 {90 142}
-1399. LowTemp NoLeakH1 ~NoLeakH2 ~V2 {98 103}
 1400. NoLeakH1 NoLeakH2 ReactorUnitSafe ~NoLeak ~V2 {129 137}
 1401. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~l ~okH1 {19 71}
 1402. NoLeakH1 ReactorUnitSafe ~V2 ~l ~okH2 {65 129}
-1403. LowTemp NoLeak okH1 ~NoLeakH1 ~l ~okH2 {73 95}
 1404. LowTemp NoLeakH2 ReactorUnitSafe l okH1 {82 121}
 1405. NoLeak ReactorUnitSafe l ~NoLeakH1 ~V2 ~okH1 {84 102}
 1406. NoLeak NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~l {101 154}
 1407. NoLeakH2 ReactorUnitSafe V2 ~V1 ~l ~okH1 {51 78}
-1408. LowTemp NoLeak ~NoLeakH1 {34 73}
-1409. NoLeakH1 V1 okH1 ~NoLeakH2 {149 163}
-1410. LowTemp NoLeak V2 okH1 okH2 {6 66}
 1411. ReactorUnitSafe ~NoLeakH1 {19 128}
 1412. LowTemp NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 ~okH2 {95 127}
-1413. okH2 ~LowTemp ~NoLeak ~NoLeakH1 ~V1 {53 70}
-1414. LowTemp NoLeak NoLeakH2 ~l ~okH1 {136 157}
-1415. V1 ~V2 ~l ~okH2 {40 60}
 1416. ReactorUnitSafe V1 V2 l okH1 okH2 {69 118}
-1417. NoLeak {47 83}
 1418. LowTemp ReactorUnitSafe ~NoLeakH1 {56 92}
 1419. LowTemp ReactorUnitSafe l okH2 ~V1 ~V2 ~okH1 {125 139}
 1420. NoLeakH2 ReactorUnitSafe okH1 ~V1 {48 81}
 1421. ReactorUnitSafe l ~LowTemp ~NoLeakH1 ~NoLeakH2 ~okH1 {93 99}
-1422. LowTemp NoLeak NoLeakH1 NoLeakH2 l okH2 ~V2 {85 126}
-1423. NoLeak NoLeakH1 V1 ~okH2 {4 157}
-1424. LowTemp NoLeak V1 l okH2 {102 117}
 1425. LowTemp NoLeakH2 ReactorUnitSafe V2 okH1 okH2 {50 138}
 1426. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 ~NoLeak ~V2 {16 153}
-1427. okH2 ~NoLeakH1 ~V2 {62 135}
 1428. NoLeak ReactorUnitSafe ~LowTemp ~NoLeakH1 {132 147}
 1429. LowTemp NoLeakH1 ReactorUnitSafe V1 okH1 ~V2 {127 153}
 1430. ReactorUnitSafe okH1 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V2 {152 163}
-1431. LowTemp NoLeakH2 ~NoLeakH1 ~V1 {90 154}
-1432. LowTemp NoLeakH1 ~NoLeak ~V2 {110 142}
-1433. okH2 ~LowTemp ~NoLeak ~NoLeakH1 ~l {53 60}
-1434. LowTemp NoLeak okH1 ~V2 {49 112}
 1435. NoLeakH1 NoLeakH2 ReactorUnitSafe ~NoLeak ~l {32 129}
-1436. LowTemp NoLeakH2 okH1 okH2 {79 159}
 1437. ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 ~l {45 140}
 1438. ReactorUnitSafe okH2 ~NoLeak ~V1 {138 147}
 1439. LowTemp ReactorUnitSafe l okH1 okH2 ~NoLeak ~V2 {127 138}
 1440. LowTemp ReactorUnitSafe l ~V1 ~okH1 {54 139}
 1441. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~l {48 136}
-1442. V1 okH1 okH2 {77 163}
 1443. ReactorUnitSafe ~V1 ~okH1 ~okH2 {46 157}
-1444. LowTemp NoLeakH1 NoLeakH2 okH2 ~V1 {3 81}
-1445. LowTemp NoLeak okH1 ~V1 ~V2 {54 67}
 1446. NoLeakH2 ReactorUnitSafe okH1 okH2 ~V1 {81 101}
-1447. V2 okH2 ~V1 {41 88}
 1448. NoLeakH1 ReactorUnitSafe V2 l ~okH1 {42 78}
-1449. NoLeakH2 V2 okH2 ~l {97 109}
-1450. NoLeakH1 V1 okH1 okH2 ~V2 ~l {114 141}
-1451. NoLeak okH1 ~NoLeakH1 ~V2 ~l ~okH2 {95 148}
 1452. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~okH1 {76 93}
 1453. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~V1 ~l {45 147}
-1454. LowTemp NoLeak l okH2 ~NoLeakH2 ~V1 {52 158}
 1455. NoLeak ReactorUnitSafe okH1 ~NoLeakH2 ~V2 {67 147}
-1456. okH2 ~LowTemp ~okH1 {24 143}
-1457. LowTemp NoLeakH2 ~NoLeak ~V1 ~V2 {49 119}
 1458. NoLeak ReactorUnitSafe V2 okH1 okH2 ~NoLeakH1 ~l {79 99}
-1459. LowTemp okH1 ~V2 ~okH2 {95 110}
 1460. NoLeakH2 ReactorUnitSafe V2 l okH2 {88 137}
-1461. LowTemp NoLeak NoLeakH2 ~V2 {82 142}
 1462. ReactorUnitSafe okH1 ~LowTemp ~NoLeak ~NoLeakH2 ~V2 ~l {19 141}
 1463. LowTemp NoLeakH2 ReactorUnitSafe okH2 {72 109}
 1464. ReactorUnitSafe V1 ~NoLeakH2 ~V2 {22 58}
 1465. LowTemp NoLeak ReactorUnitSafe V2 l okH1 okH2 ~NoLeakH1 {55 117}
-1466. NoLeakH1 V1 l okH1 okH2 {105 114}
-1467. LowTemp NoLeak NoLeakH1 okH1 okH2 ~V1 {81 83}
-1468. NoLeakH2 ~LowTemp ~NoLeakH1 {30 132}
-1469. LowTemp NoLeakH2 ~NoLeakH1 ~V1 ~V2 ~l {60 154}
-1470. ~LowTemp ~NoLeakH2 {30 83}
-1471. LowTemp NoLeak okH1 ~NoLeakH1 {52 144}
 1472. NoLeakH1 ReactorUnitSafe okH2 ~V2 ~l {102 146}
-1473. LowTemp NoLeak NoLeakH1 NoLeakH2 okH2 ~V1 ~l {71 81}
-1474. LowTemp NoLeak NoLeakH1 okH1 ~l {83 153}
-1475. LowTemp NoLeak NoLeakH2 l {82 111}
 1476. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 {74 101}
-1477. LowTemp NoLeak V1 okH1 {25 128}
-1478. LowTemp NoLeak NoLeakH1 ~okH1 {78 123}
-1479. NoLeakH1 ~NoLeak {30 149}
-1480. LowTemp okH1 okH2 ~V1 {79 90}
 1481. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 ~l {131 155}
 1482. LowTemp NoLeakH1 ReactorUnitSafe l ~NoLeakH2 ~V1 ~V2 {133 139}
 1483. ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH1 {99 115}
-1484. okH2 ~LowTemp ~NoLeak ~V1 ~l ~okH1 {97 143}
-1485. V1 okH1 ~LowTemp {47 163}
 1486. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 {76 84}
 1487. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 okH2 ~NoLeak ~V2 {4 72}
 1488. NoLeak ReactorUnitSafe V1 l okH2 ~NoLeakH2 {117 122}
 1489. NoLeakH1 ReactorUnitSafe okH1 okH2 ~V2 {85 147}
-1490. NoLeakH1 ~NoLeakH2 ~V1 ~V2 {133 143}
 1491. LowTemp ReactorUnitSafe ~V1 ~V2 ~okH1 ~okH2 {64 157}
-1492. LowTemp NoLeak NoLeakH2 okH1 ~V1 ~okH2 {87 161}
-1493. okH2 {53 123}
-1494. NoLeakH1 okH1 ~NoLeak ~V1 ~V2 {105 119}
 1495. NoLeak ReactorUnitSafe V2 l okH1 ~NoLeakH1 ~NoLeakH2 {99 151}
-1496. NoLeak l okH1 ~NoLeakH1 ~NoLeakH2 {43 151}
-1497. NoLeak NoLeakH1 V1 {47 130}
 1498. ReactorUnitSafe l ~V2 ~okH2 {26 84}
 1499. NoLeak ReactorUnitSafe l ~NoLeakH1 ~NoLeakH2 ~okH2 {39 131}
 1500. NoLeakH1 ReactorUnitSafe okH2 ~V2 {85 122}
-1501. LowTemp NoLeak NoLeakH1 NoLeakH2 V1 okH1 okH2 {85 109}
 1502. ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~okH2 {63 86}
 1503. LowTemp ReactorUnitSafe okH2 ~V2 ~okH1 {93 136}
 1504. LowTemp ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 ~V2 ~l {72 155}
 1505. NoLeakH1 ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V1 ~V2 ~okH1 {42 164}
-1506. okH2 ~V2 ~okH1 {102 135}
 1507. LowTemp ReactorUnitSafe l ~V2 ~okH1 {49 93}
-1508. ~NoLeakH1 ~NoLeakH2 {43 150}
 1509. ReactorUnitSafe V1 okH1 okH2 ~l {94 136}
-1510. ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {2 70}
-1511. LowTemp NoLeakH1 l okH1 ~okH2 {105 161}
 1512. ReactorUnitSafe l okH2 ~V2 ~okH1 {16 102}
-1513. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~l ~okH1 {89 143}
 1514. ReactorUnitSafe V1 ~l {56 162}
 1515. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 {131 140}
 1516. ReactorUnitSafe ~LowTemp ~okH1 {47 122}
@@ -1520,63 +842,35 @@
 1520. NoLeak ReactorUnitSafe V2 ~LowTemp ~NoLeakH1 {48 88}
 1521. LowTemp NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 ~okH2 {84 103}
 1522. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~okH2 {49 63}
-1523. ~V1 ~V2 ~okH1 ~okH2 {70 157}
-1524. LowTemp NoLeak V2 okH2 ~NoLeakH1 {52 109}
 1525. ReactorUnitSafe l okH1 ~NoLeak ~V1 ~okH2 {39 121}
 1526. NoLeakH2 ReactorUnitSafe l okH2 ~okH1 {61 102}
 1527. LowTemp NoLeakH1 ReactorUnitSafe l okH1 ~NoLeakH2 ~V2 {127 133}
-1528. LowTemp NoLeak NoLeakH2 V1 okH2 {59 109}
-1529. okH1 okH2 ~V2 {125 163}
-1530. okH1 ~V2 ~okH2 {75 148}
-1531. LowTemp NoLeak NoLeakH1 okH1 okH2 ~l {66 116}
 1532. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~okH1 {126 134}
 1533. NoLeak ReactorUnitSafe okH1 ~NoLeakH2 ~V2 ~l ~okH2 {95 147}
 1534. ReactorUnitSafe l ~NoLeak ~V1 ~okH2 {39 42}
-1535. NoLeakH2 V2 okH1 okH2 ~l {50 97}
 1536. ReactorUnitSafe l ~LowTemp ~NoLeakH2 ~okH1 {139 162}
-1537. LowTemp NoLeak okH2 ~V1 ~l {76 149}
 1538. NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 okH2 ~NoLeak ~V2 {61 141}
-1539. LowTemp NoLeak NoLeakH2 ~NoLeakH1 ~l ~okH2 {40 154}
 1540. ReactorUnitSafe l ~NoLeak ~V1 ~okH1 {137 139}
-1541. l ~NoLeakH1 ~V1 ~okH2 {31 90}
 1542. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 ~okH2 {40 152}
-1543. LowTemp l okH1 ~NoLeakH2 ~V1 ~V2 {67 90}
-1544. NoLeakH2 okH1 ~l {120 141}
-1545. V2 l okH2 {53 111}
-1546. LowTemp NoLeak ~NoLeakH2 ~l {73 103}
 1547. ReactorUnitSafe V2 l okH2 ~V1 ~okH1 {3 55}
 1548. ReactorUnitSafe l ~LowTemp ~NoLeak {137 147}
-1549. LowTemp NoLeak V2 l okH2 {29 111}
 1550. LowTemp ReactorUnitSafe okH1 ~NoLeakH2 ~V1 {46 66}
-1551. LowTemp NoLeak NoLeakH2 okH1 ~V1 ~V2 ~l {37 154}
 1552. NoLeakH2 ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~V2 ~l {45 63}
-1553. NoLeakH1 V1 l ~NoLeakH2 {98 130}
-1554. NoLeak okH1 ~NoLeakH1 ~NoLeakH2 ~okH2 {66 148}
 1555. NoLeak ReactorUnitSafe V2 l okH1 okH2 ~NoLeakH1 {80 160}
-1556. NoLeakH1 l ~NoLeakH2 ~okH1 {111 143}
 1557. NoLeak ReactorUnitSafe V2 l okH1 ~NoLeakH1 ~okH2 {99 161}
 1558. NoLeak NoLeakH1 ReactorUnitSafe V1 okH1 ~NoLeakH2 ~V2 ~l {94 103}
 1559. LowTemp NoLeakH1 ReactorUnitSafe V1 l okH1 okH2 ~V2 {100 117}
 1560. NoLeak ReactorUnitSafe l okH2 ~NoLeakH1 ~NoLeakH2 {19 96}
 1561. NoLeakH1 ReactorUnitSafe okH2 ~V2 ~l ~okH1 {102 129}
-1562. NoLeakH2 V2 okH2 ~NoLeakH1 ~V1 ~l {97 120}
-1563. NoLeakH1 l ~NoLeakH2 {90 130}
 1564. LowTemp ReactorUnitSafe okH2 ~okH1 {106 107}
 1565. NoLeak NoLeakH1 ReactorUnitSafe V1 l okH1 ~NoLeakH2 {94 158}
-1566. V2 l okH2 ~V1 {88 90}
 1567. LowTemp NoLeak ReactorUnitSafe V1 l okH1 okH2 ~NoLeakH2 {127 160}
 1568. NoLeakH2 ReactorUnitSafe V2 okH2 ~V1 ~l {51 88}
 1569. NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeakH1 ~l {99 136}
-1570. LowTemp NoLeak NoLeakH1 ~V1 ~V2 ~l {54 103}
-1571. LowTemp NoLeak NoLeakH2 V1 okH1 {77 144}
-1572. LowTemp NoLeak V1 ~NoLeakH1 {40 74}
 1573. LowTemp ReactorUnitSafe okH2 ~NoLeakH1 {29 107}
 1574. NoLeak ReactorUnitSafe l ~NoLeakH1 ~V2 {62 84}
 1575. ReactorUnitSafe l okH1 okH2 ~LowTemp ~NoLeak {101 105}
-1576. NoLeak V1 l okH1 ~NoLeakH1 {82 163}
-1577. LowTemp NoLeakH1 NoLeakH2 okH2 ~NoLeak ~V2 {110 116}
 1578. NoLeakH1 ReactorUnitSafe V1 ~V2 ~l ~okH2 {40 129}
-1579. ~NoLeakH1 ~V1 {70 73}
 1580. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH1 ~V1 ~V2 {82 152}
 1581. ReactorUnitSafe V2 l okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 {55 162}
 1582. LowTemp NoLeakH1 ReactorUnitSafe l okH1 ~okH2 {121 161}
@@ -1584,174 +878,90 @@
 1584. LowTemp ReactorUnitSafe okH2 ~V1 {55 142}
 1585. LowTemp ReactorUnitSafe okH1 ~V1 ~V2 ~okH2 {28 63}
 1586. NoLeak ReactorUnitSafe l okH2 ~NoLeakH1 ~NoLeakH2 ~okH1 {91 106}
-1587. LowTemp NoLeak okH1 ~NoLeakH1 ~V2 {67 132}
-1588. LowTemp NoLeak NoLeakH1 NoLeakH2 V2 okH2 ~V1 {78 81}
-1589. LowTemp NoLeak NoLeakH2 ~NoLeakH1 {34 120}
-1590. NoLeak l okH2 ~NoLeakH1 ~NoLeakH2 {43 96}
 1591. NoLeak ReactorUnitSafe V1 V2 okH1 ~LowTemp ~NoLeakH1 {94 120}
-1592. NoLeakH2 okH2 ~NoLeak ~V2 {60 159}
 1593. ReactorUnitSafe V2 ~NoLeakH1 {99 150}
-1594. LowTemp NoLeak V1 okH1 ~NoLeakH1 ~l {89 144}
-1595. NoLeak V1 V2 ~LowTemp ~NoLeakH2 {78 163}
-1596. NoLeakH2 V2 ~NoLeakH1 ~V1 {41 120}
 1597. NoLeak NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~l ~okH2 {63 120}
-1598. LowTemp l okH1 ~NoLeakH2 ~V2 {135 151}
 1599. ReactorUnitSafe l ~NoLeakH1 ~okH2 {5 92}
-1600. LowTemp NoLeak NoLeakH2 okH1 okH2 ~V2 ~l {85 89}
-1601. ~NoLeakH2 {41 131}
 1602. LowTemp NoLeak ReactorUnitSafe l okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {152 160}
 1603. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~l {76 101}
-1604. l ~V1 ~okH1 ~okH2 {90 157}
 1605. ReactorUnitSafe ~NoLeakH2 ~okH1 {122 150}
 1606. LowTemp NoLeak ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~okH2 {95 139}
-1607. V1 okH1 ~V2 ~l ~okH2 {60 144}
 1608. LowTemp NoLeak ReactorUnitSafe V2 l okH1 ~NoLeakH1 ~V1 {39 160}
-1609. ~NoLeakH1 {73 135}
-1610. l ~okH1 {78 110}
 1611. ReactorUnitSafe V2 {99 149}
 1612. ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH2 ~V2 {104 162}
-1613. NoLeak V1 okH1 ~LowTemp ~NoLeakH1 {114 148}
 1614. LowTemp NoLeakH2 ReactorUnitSafe l okH1 ~V1 ~V2 {72 161}
 1615. LowTemp NoLeakH2 ReactorUnitSafe V2 l okH1 okH2 ~V1 {55 81}
 1616. NoLeakH2 ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH1 ~V1 ~l {45 48}
 1617. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~NoLeakH1 ~l {60 80}
-1618. LowTemp NoLeak ~V1 {71 161}
 1619. NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 ~NoLeak ~V2 {137 146}
-1620. okH2 ~V1 ~l {88 119}
 1621. ReactorUnitSafe ~NoLeak ~V1 ~V2 ~l ~okH2 {63 129}
-1622. V2 l ~NoLeakH1 ~V1 {73 90}
-1623. LowTemp NoLeak l ~okH2 {8 40}
 1624. NoLeakH2 ReactorUnitSafe V2 okH2 ~l {99 116}
-1625. NoLeak NoLeakH2 V2 ~okH1 {5 106}
-1626. LowTemp NoLeak {54 131}
 1627. ReactorUnitSafe V1 ~LowTemp {47 162}
 1628. ReactorUnitSafe V1 l okH1 ~NoLeak ~V2 {127 137}
-1629. LowTemp okH1 ~NoLeakH2 ~V1 {41 66}
 1630. LowTemp NoLeakH1 ReactorUnitSafe okH2 ~V1 {71 121}
 1631. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 {46 132}
-1632. okH1 okH2 ~V2 ~l {62 141}
-1633. LowTemp NoLeakH1 okH1 ~V2 ~okH2 {141 161}
 1634. LowTemp NoLeak NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~okH2 {63 82}
-1635. LowTemp NoLeakH2 l ~NoLeakH1 ~V1 ~V2 {70 82}
-1636. LowTemp NoLeak NoLeakH2 ~V2 ~l {132 142}
-1637. ~V1 ~V2 ~okH2 {65 70}
-1638. NoLeakH2 V2 okH2 ~NoLeakH1 {53 128}
-1639. ~V1 ~l ~okH1 {78 119}
-1640. LowTemp NoLeakH1 okH1 okH2 ~V2 ~l {79 141}
 1641. NoLeakH1 ReactorUnitSafe okH1 okH2 ~V1 {81 147}
-1642. LowTemp l okH2 ~okH1 {98 126}
 1643. NoLeakH1 ReactorUnitSafe V1 l okH2 {61 130}
-1644. LowTemp NoLeak NoLeakH1 NoLeakH2 l okH1 ~V2 {85 161}
 1645. NoLeakH1 ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH2 ~V2 ~l {143 146}
-1646. NoLeakH1 V1 V2 l okH1 {50 105}
 1647. NoLeak ReactorUnitSafe V2 okH1 okH2 ~NoLeakH1 ~NoLeakH2 {66 80}
 1648. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH1 {82 92}
-1649. NoLeakH1 NoLeakH2 okH1 okH2 ~NoLeak ~V1 {97 105}
-1650. LowTemp NoLeak NoLeakH1 V1 {128 130}
 1651. LowTemp NoLeak ReactorUnitSafe V2 l okH2 ~NoLeakH2 ~V1 {55 158}
-1652. LowTemp NoLeak NoLeakH2 V1 ~V2 {40 59}
-1653. NoLeak V1 V2 ~okH2 {50 157}
-1654. NoLeak NoLeakH2 V2 {26 120}
-1655. LowTemp NoLeak V2 okH2 ~NoLeakH1 ~l {76 109}
-1656. LowTemp NoLeak okH2 ~l ~okH1 {13 71}
 1657. NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 {52 80}
-1658. LowTemp NoLeak V2 okH2 ~V1 {71 160}
-1659. V1 V2 okH1 ~LowTemp {32 163}
 1660. LowTemp NoLeakH1 ReactorUnitSafe V1 l okH1 okH2 {42 117}
 1661. ReactorUnitSafe l okH1 ~NoLeak ~V2 ~okH2 {84 121}
 1662. ReactorUnitSafe okH2 ~NoLeakH1 ~V1 ~V2 ~l {7 101}
 1663. NoLeakH2 ReactorUnitSafe V2 l okH1 {120 121}
 1664. ReactorUnitSafe V1 l ~okH2 {40 118}
 1665. LowTemp NoLeakH2 ReactorUnitSafe okH1 {138 144}
-1666. NoLeakH2 okH2 ~NoLeak {30 77}
 1667. NoLeakH1 ReactorUnitSafe V1 V2 l okH2 {42 109}
 1668. ReactorUnitSafe V2 okH2 {46 109}
-1669. LowTemp NoLeakH2 V2 l okH1 okH2 {159 160}
-1670. LowTemp NoLeak NoLeakH1 okH2 ~NoLeakH2 ~l {88 103}
-1671. NoLeak V1 V2 l okH1 okH2 ~NoLeakH2 {160 163}
-1672. V1 okH1 {128 163}
 1673. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V2 ~okH2 {56 84}
 1674. ReactorUnitSafe V2 l ~LowTemp ~NoLeak {42 99}
-1675. ~LowTemp ~okH1 {47 143}
 1676. NoLeak NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 ~l {103 147}
 1677. ReactorUnitSafe l ~NoLeak ~NoLeakH1 ~V2 {58 137}
-1678. NoLeakH2 V1 V2 l okH2 {109 159}
-1679. NoLeak V1 V2 okH1 ~LowTemp ~NoLeakH1 {53 144}
 1680. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 ~l {103 129}
 1681. LowTemp ReactorUnitSafe l ~NoLeakH1 ~V2 {49 91}
-1682. okH2 ~LowTemp ~NoLeakH1 {15 101}
-1683. LowTemp V2 l okH1 okH2 {98 160}
 1684. ReactorUnitSafe ~LowTemp ~NoLeak ~NoLeakH1 ~V1 {70 99}
 1685. ReactorUnitSafe l ~NoLeakH1 ~V2 {47 91}
-1686. LowTemp NoLeak V2 okH2 ~NoLeakH2 {66 106}
-1687. NoLeak ~okH1 {102 157}
-1688. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~l {43 76}
-1689. LowTemp NoLeak ~NoLeakH2 ~V2 ~l ~okH2 {31 103}
-1690. NoLeakH2 V2 l ~NoLeakH1 ~V1 {90 120}
 1691. NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~l {114 134}
 1692. ReactorUnitSafe V1 l okH2 ~LowTemp ~NoLeak {61 162}
 1693. ReactorUnitSafe V1 V2 l okH2 {109 118}
 1694. NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~okH1 {122 149}
-1695. NoLeakH1 ~NoLeak ~V2 ~l {15 129}
 1696. LowTemp NoLeakH2 ReactorUnitSafe okH1 ~V1 ~V2 ~l ~okH2 {51 95}
-1697. LowTemp NoLeak NoLeakH1 l okH1 okH2 ~V1 {133 160}
-1698. LowTemp NoLeak NoLeakH2 V1 okH1 ~l {136 144}
-1699. l ~NoLeakH1 ~V2 ~okH2 {9 148}
 1700. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH2 ~V1 ~okH2 {139 161}
-1701. NoLeak V2 l okH2 ~NoLeakH1 {53 96}
 1702. LowTemp ReactorUnitSafe l okH2 ~NoLeak ~NoLeakH1 ~V1 ~V2 {72 92}
-1703. LowTemp NoLeak NoLeakH1 NoLeakH2 V2 okH2 ~l {106 113}
 1704. NoLeakH2 ReactorUnitSafe l ~okH1 ~okH2 {137 157}
 1705. LowTemp ReactorUnitSafe l okH2 ~okH1 {118 126}
 1706. ReactorUnitSafe V2 l okH1 okH2 ~LowTemp ~NoLeak {53 121}
-1707. NoLeak NoLeakH2 V1 {24 40}
 1708. ReactorUnitSafe okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V1 ~l {80 155}
 1709. ReactorUnitSafe l okH2 ~NoLeakH1 ~V2 {24 91}
-1710. ~V1 ~okH1 {54 143}
-1711. okH2 ~LowTemp ~NoLeak ~NoLeakH1 ~V1 ~l {43 97}
 1712. NoLeak ReactorUnitSafe V1 l okH1 ~NoLeakH1 {120 127}
-1713. LowTemp NoLeakH2 ~NoLeakH1 ~V1 ~V2 {110 154}
 1714. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 {131 152}
 1715. NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH2 {66 162}
-1716. ~NoLeakH2 ~V2 ~okH1 {34 143}
-1717. LowTemp NoLeak NoLeakH1 ~NoLeakH2 ~V1 ~V2 {7 158}
 1718. ReactorUnitSafe ~NoLeakH1 ~V1 ~okH2 {10 39}
-1719. NoLeak V1 l okH1 ~NoLeakH2 ~okH2 {161 163}
 1720. LowTemp NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 ~okH1 {55 71}
 1721. ReactorUnitSafe l okH1 ~NoLeak {86 137}
-1722. LowTemp NoLeak NoLeakH2 okH1 ~l ~okH2 {32 95}
 1723. LowTemp NoLeakH2 ReactorUnitSafe ~V1 {39 116}
 1724. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~V2 ~okH1 {71 84}
 1725. NoLeakH1 NoLeakH2 ReactorUnitSafe okH1 ~NoLeak ~l {4 51}
 1726. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~V1 ~l ~okH2 {63 99}
-1727. NoLeakH1 ~NoLeakH2 ~V2 ~okH1 {123 143}
 1728. LowTemp NoLeakH1 ReactorUnitSafe l ~NoLeakH2 ~V1 {46 158}
-1729. ~NoLeakH1 ~NoLeakH2 ~V1 {2 41}
 1730. NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 {80 125}
-1731. LowTemp NoLeak ~l ~okH1 {40 71}
 1732. ReactorUnitSafe ~LowTemp ~NoLeak ~V1 ~l ~okH1 {51 143}
-1733. LowTemp NoLeak NoLeakH2 okH1 okH2 ~V1 ~V2 {52 85}
-1734. NoLeakH1 okH2 ~V2 ~l {102 141}
 1735. ReactorUnitSafe V2 l ~NoLeakH1 {73 118}
 1736. LowTemp NoLeakH1 ReactorUnitSafe V1 okH1 okH2 {100 109}
 1737. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V2 {48 59}
-1738. LowTemp NoLeak NoLeakH1 ~NoLeakH2 ~l ~okH1 {78 103}
 1739. ReactorUnitSafe l ~LowTemp ~NoLeakH1 ~NoLeakH2 ~okH2 {39 162}
-1740. V1 okH1 ~LowTemp ~okH2 {4 148}
-1741. NoLeakH1 okH1 ~NoLeakH2 ~V2 {133 163}
 1742. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 {25 152}
 1743. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~okH1 {58 78}
-1744. LowTemp NoLeak NoLeakH1 NoLeakH2 l okH1 ~V1 {81 161}
 1745. ReactorUnitSafe ~V2 ~l ~okH1 ~okH2 {156 157}
 1746. NoLeak NoLeakH2 ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 ~l {80 154}
-1747. LowTemp NoLeak V2 l okH2 ~NoLeakH2 {29 158}
 1748. ReactorUnitSafe V1 okH1 okH2 ~V2 {114 115}
 1749. LowTemp ReactorUnitSafe okH1 okH2 ~NoLeak ~V1 ~V2 ~l {68 134}
 1750. NoLeakH1 ReactorUnitSafe l ~okH2 {121 157}
 1751. ReactorUnitSafe ~NoLeakH1 ~l {19 56}
-1752. LowTemp NoLeakH1 okH1 ~NoLeakH2 ~V2 ~l {112 141}
 1753. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~l {99 112}
-1754. okH2 ~V2 ~l ~okH1 {60 102}
 1755. ReactorUnitSafe V1 l okH1 okH2 ~LowTemp ~NoLeak {61 94}
 1756. NoLeak ReactorUnitSafe V2 l okH1 okH2 ~NoLeakH2 {147 160}
 1757. LowTemp NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 {117 134}
@@ -1759,505 +969,254 @@
 1759. ReactorUnitSafe ~okH1 {122 128}
 1760. NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~l {80 103}
 1761. LowTemp NoLeakH2 ReactorUnitSafe l okH2 ~okH1 {61 126}
-1762. LowTemp NoLeak okH2 ~V1 ~V2 ~l {52 142}
 1763. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V2 {57 137}
 1764. ReactorUnitSafe V1 l okH1 ~NoLeakH2 {25 118}
-1765. LowTemp NoLeak V1 okH1 okH2 ~V2 {27 117}
 1766. NoLeakH2 ReactorUnitSafe V1 l okH1 {61 144}
-1767. LowTemp NoLeakH1 ~NoLeakH2 ~V1 ~V2 ~l {41 103}
-1768. LowTemp NoLeak NoLeakH2 okH1 ~NoLeakH1 ~l ~okH2 {95 120}
 1769. ReactorUnitSafe l ~LowTemp ~NoLeak ~okH2 {42 148}
 1770. NoLeak ReactorUnitSafe V1 l okH1 ~NoLeakH1 ~NoLeakH2 {73 127}
 1771. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~V1 ~l {116 134}
-1772. l okH2 ~NoLeakH1 ~V2 {62 110}
 1773. ReactorUnitSafe V1 ~V2 ~l ~okH2 {40 156}
-1774. LowTemp NoLeak NoLeakH1 okH1 okH2 ~V1 ~V2 ~l {81 103}
 1775. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~l {29 63}
 1776. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeakH1 {107 120}
 1777. ReactorUnitSafe V1 l okH2 {22 38}
-1778. V2 okH2 ~NoLeakH1 {53 150}
-1779. l ~NoLeakH2 ~V2 {83 110}
 1780. ReactorUnitSafe okH2 ~l ~okH1 {122 136}
 1781. NoLeak ReactorUnitSafe l okH1 ~NoLeakH2 {147 151}
-1782. V2 l okH1 okH2 ~LowTemp ~NoLeak {53 105}
-1783. V2 l okH2 ~okH1 {98 106}
 1784. LowTemp NoLeak NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V1 {38 154}
-1785. LowTemp NoLeak ~NoLeakH1 ~l ~okH1 {89 157}
 1786. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH2 ~V1 ~V2 ~okH1 {71 93}
 1787. NoLeak NoLeakH2 ReactorUnitSafe V2 l ~NoLeakH1 {82 99}
-1788. ~V1 ~V2 ~l ~okH1 ~okH2 {119 157}
 1789. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak {6 115}
 1790. NoLeakH1 ReactorUnitSafe V2 l okH2 {106 121}
-1791. LowTemp NoLeak NoLeakH1 l okH1 okH2 {75 160}
-1792. NoLeak NoLeakH1 ~NoLeakH2 ~V2 ~l ~okH1 {103 143}
-1793. LowTemp NoLeak NoLeakH2 ~okH1 {77 157}
-1794. NoLeakH2 okH2 ~NoLeakH1 ~V1 ~l {62 97}
-1795. V1 okH2 ~l {60 109}
 1796. ReactorUnitSafe l okH1 ~LowTemp ~NoLeak ~okH2 {121 148}
-1797. LowTemp NoLeak V1 l okH1 ~NoLeakH1 {25 82}
 1798. LowTemp NoLeakH1 ReactorUnitSafe l ~NoLeak ~NoLeakH2 ~V1 ~V2 {68 139}
-1799. NoLeak NoLeakH1 V1 l okH1 ~NoLeakH2 {158 163}
 1800. LowTemp ReactorUnitSafe V1 okH1 {50 107}
 1801. ReactorUnitSafe ~NoLeakH1 ~V2 ~okH2 {34 48}
-1802. NoLeak ~LowTemp ~NoLeakH1 ~okH1 {102 148}
 1803. NoLeak ReactorUnitSafe V1 l okH1 ~NoLeakH1 ~V2 {127 132}
-1804. LowTemp NoLeak NoLeakH2 okH1 ~NoLeakH1 ~V1 ~okH2 {154 161}
 1805. LowTemp NoLeakH1 ReactorUnitSafe l ~NoLeakH2 {42 158}
 1806. ReactorUnitSafe okH1 ~NoLeakH2 {10 86}
-1807. LowTemp NoLeak V2 okH2 ~l ~okH1 {71 109}
-1808. LowTemp NoLeak NoLeakH1 ~V2 ~okH2 {75 157}
-1809. LowTemp NoLeak NoLeakH2 V2 okH1 okH2 ~NoLeakH1 ~V1 {154 160}
-1810. okH2 ~l ~okH1 {136 143}
-1811. LowTemp NoLeak NoLeakH1 V2 {78 108}
 1812. ReactorUnitSafe ~V1 ~V2 ~l ~okH1 ~okH2 {33 157}
-1813. LowTemp NoLeak okH1 ~NoLeakH2 ~V1 ~V2 {8 112}
-1814. V1 l ~V2 ~okH2 {40 110}
-1815. LowTemp NoLeak NoLeakH2 ~V1 ~V2 ~l {142 154}
-1816. LowTemp NoLeak V1 okH2 ~NoLeakH2 {74 130}
-1817. LowTemp NoLeakH1 NoLeakH2 okH1 ~NoLeak ~V2 {49 141}
-1818. NoLeak V2 okH2 ~NoLeakH1 ~l {53 89}
 1819. ReactorUnitSafe V1 okH1 {50 115}
 1820. NoLeakH1 ReactorUnitSafe l ~NoLeak ~NoLeakH2 ~V1 {121 139}
 1821. ReactorUnitSafe ~V1 ~V2 ~okH2 {65 104}
 1822. ReactorUnitSafe okH2 ~LowTemp ~NoLeak ~NoLeakH1 ~V1 ~l {43 45}
 1823. NoLeak ReactorUnitSafe V2 l okH2 ~NoLeakH2 ~okH1 {109 139}
 1824. NoLeakH1 ReactorUnitSafe okH2 ~l ~okH1 {116 122}
-1825. NoLeak l ~NoLeakH2 {143 151}
-1826. LowTemp okH2 ~V1 ~okH1 {71 98}
-1827. NoLeakH2 okH2 ~NoLeak ~l {13 97}
 1828. LowTemp NoLeakH2 ReactorUnitSafe l okH1 ~V2 {82 100}
-1829. NoLeakH2 V2 ~LowTemp ~NoLeakH1 {30 120}
 1830. ReactorUnitSafe l ~NoLeak ~V2 ~okH1 {93 137}
-1831. LowTemp NoLeak NoLeakH2 V2 {120 149}
 1832. NoLeak ReactorUnitSafe ~NoLeakH1 ~V2 ~l {57 132}
 1833. NoLeak ReactorUnitSafe l ~NoLeakH1 ~okH1 ~okH2 {78 84}
-1834. LowTemp NoLeak ~NoLeakH2 ~okH2 {66 157}
 1835. ReactorUnitSafe okH1 ~NoLeak ~V2 ~okH2 {100 148}
-1836. V1 l okH1 ~NoLeakH2 ~V2 {9 163}
-1837. NoLeakH2 l ~LowTemp ~NoLeak ~NoLeakH1 {148 159}
 1838. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~V2 {51 91}
 1839. ReactorUnitSafe okH2 ~V1 ~l ~okH1 {33 106}
 1840. LowTemp ReactorUnitSafe okH1 ~NoLeak ~NoLeakH2 ~V2 ~l {57 100}
-1841. LowTemp V1 l okH1 okH2 ~V2 {110 117}
 1842. NoLeak ReactorUnitSafe V1 l ~NoLeakH2 {92 130}
 1843. NoLeakH2 ReactorUnitSafe V2 l ~NoLeakH1 {49 99}
 1844. ReactorUnitSafe V1 okH1 ~V2 ~okH2 {115 144}
-1845. LowTemp NoLeak NoLeakH1 okH1 ~NoLeakH2 ~V2 ~okH2 {103 161}
-1846. LowTemp NoLeak NoLeakH1 l ~V1 {54 158}
 1847. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH2 ~V2 ~okH2 {124 161}
 1848. LowTemp ReactorUnitSafe V1 l okH1 okH2 {117 118}
-1849. LowTemp NoLeak V1 okH2 ~V2 {59 131}
 1850. NoLeakH1 ReactorUnitSafe V1 l ~okH2 {40 42}
-1851. LowTemp NoLeak NoLeakH1 ~V2 {49 103}
-1852. NoLeakH1 V2 l okH2 {105 106}
 1853. LowTemp ReactorUnitSafe l okH1 ~V2 {67 137}
-1854. LowTemp NoLeak ~NoLeakH1 ~V1 ~okH1 {52 157}
-1855. NoLeakH2 V2 okH2 ~NoLeakH1 ~V1 {44 53}
-1856. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~okH1 {74 143}
-1857. NoLeakH1 V1 okH1 ~NoLeakH2 ~V2 {75 163}
 1858. LowTemp ReactorUnitSafe ~NoLeakH1 ~V2 {56 91}
-1859. l ~V2 ~okH1 ~okH2 {110 157}
 1860. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~okH1 {52 122}
-1861. LowTemp NoLeak NoLeakH1 NoLeakH2 okH2 ~okH1 {116 126}
-1862. okH2 ~LowTemp ~NoLeak ~NoLeakH1 {53 135}
 1863. ReactorUnitSafe l okH2 ~NoLeak ~NoLeakH1 {92 159}
 1864. ReactorUnitSafe V2 l ~okH1 {78 118}
 1865. LowTemp NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 ~okH1 {111 164}
 1866. ReactorUnitSafe okH2 ~NoLeakH1 ~V2 {19 59}
-1867. LowTemp NoLeak NoLeakH2 okH1 ~okH2 {54 144}
 1868. ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~okH1 {55 164}
 1869. ReactorUnitSafe l ~V1 ~okH1 ~okH2 {20 157}
 1870. NoLeak NoLeakH1 ReactorUnitSafe l ~NoLeakH2 {147 158}
 1871. LowTemp NoLeakH2 ReactorUnitSafe V2 okH2 ~V1 ~okH1 {78 138}
-1872. LowTemp okH2 ~NoLeakH1 {89 98}
-1873. NoLeakH2 okH1 ~l ~okH2 {148 153}
-1874. LowTemp NoLeak V2 l okH1 ~NoLeakH1 {31 160}
-1875. LowTemp NoLeak NoLeakH2 okH1 ~NoLeakH1 ~V2 ~okH2 {82 95}
-1876. ~V1 ~okH1 ~okH2 {41 157}
-1877. NoLeak ~NoLeakH2 ~V2 ~l ~okH2 {95 143}
-1878. ~NoLeakH2 ~V2 ~l ~okH1 {27 143}
 1879. ReactorUnitSafe okH2 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V1 ~l ~okH1 {80 164}
-1880. LowTemp NoLeak l okH2 ~NoLeakH2 ~V2 {67 126}
-1881. NoLeakH1 okH1 ~NoLeakH2 ~V2 ~l {83 141}
 1882. NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 ~l {89 99}
 1883. NoLeak ReactorUnitSafe okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V2 ~l {114 155}
 1884. NoLeakH2 ReactorUnitSafe V2 okH1 okH2 ~V1 {81 99}
 1885. NoLeak ReactorUnitSafe V2 okH1 ~NoLeakH1 ~NoLeakH2 {66 99}
 1886. NoLeakH2 ReactorUnitSafe l ~NoLeakH1 ~V2 {24 84}
-1887. okH2 ~V1 {70 88}
 1888. ReactorUnitSafe l ~V2 ~okH1 {47 93}
 1889. ReactorUnitSafe {54 162}
 1890. ReactorUnitSafe V1 ~NoLeak ~NoLeakH2 ~V2 {107 162}
-1891. NoLeak V2 okH1 okH2 ~NoLeakH1 ~NoLeakH2 {53 66}
 1892. ReactorUnitSafe V1 V2 ~LowTemp {22 99}
-1893. NoLeakH2 l ~NoLeakH1 ~V2 {110 132}
 1894. LowTemp NoLeakH1 ReactorUnitSafe V1 ~NoLeakH2 ~V2 {107 130}
 1895. LowTemp ReactorUnitSafe ~V1 ~okH1 {64 78}
-1896. LowTemp okH2 ~V1 ~V2 ~okH1 {71 110}
-1897. LowTemp NoLeak ~NoLeakH2 ~V2 ~okH2 {67 157}
-1898. V2 okH2 ~NoLeakH1 ~V1 {35 53}
 1899. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~l {57 73}
-1900. LowTemp NoLeak V1 okH1 okH2 ~NoLeakH2 ~l {109 112}
-1901. LowTemp NoLeak NoLeakH1 NoLeakH2 ~l ~okH2 {153 157}
 1902. ReactorUnitSafe l okH1 okH2 ~NoLeakH1 ~NoLeakH2 {55 127}
 1903. LowTemp NoLeakH1 ReactorUnitSafe l okH2 ~okH1 {42 126}
 1904. LowTemp NoLeakH2 ReactorUnitSafe l okH1 ~okH2 {137 161}
 1905. ReactorUnitSafe l ~okH1 {16 78}
 1906. LowTemp ReactorUnitSafe ~NoLeakH1 ~V1 ~l {56 140}
-1907. LowTemp okH1 okH2 {60 160}
 1908. NoLeak NoLeakH1 ReactorUnitSafe l ~NoLeakH2 ~okH1 {122 158}
 1909. ReactorUnitSafe l ~NoLeak ~NoLeakH2 ~V2 {42 91}
 1910. NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~okH2 {140 144}
 1911. NoLeakH2 ReactorUnitSafe V2 okH1 ~l {99 153}
-1912. LowTemp NoLeak NoLeakH2 ~okH2 {40 54}
 1913. ReactorUnitSafe V2 l {42 73}
 1914. ReactorUnitSafe V1 ~V2 ~okH2 {40 115}
 1915. ReactorUnitSafe l ~V1 ~okH2 {20 65}
-1916. LowTemp NoLeak NoLeakH2 ~V1 ~V2 ~okH1 {125 157}
 1917. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 ~l ~okH2 {63 131}
 1918. LowTemp NoLeakH1 NoLeakH2 ReactorUnitSafe ~NoLeak ~V1 {42 87}
 1919. LowTemp NoLeakH2 ReactorUnitSafe l ~NoLeakH1 {82 137}
-1920. LowTemp NoLeak NoLeakH2 V1 l {18 40}
 1921. NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 ~V1 ~l ~okH1 {71 80}
 1922. ReactorUnitSafe okH2 ~NoLeak {138 162}
 1923. LowTemp NoLeakH1 ReactorUnitSafe ~V2 ~okH2 {100 157}
 1924. NoLeakH1 ReactorUnitSafe okH2 ~V1 {81 122}
-1925. NoLeak l ~NoLeakH1 ~okH1 {126 148}
-1926. V1 okH1 ~V2 ~okH2 {135 144}
 1927. NoLeakH2 ReactorUnitSafe ~NoLeakH1 {115 120}
 1928. LowTemp NoLeakH1 ReactorUnitSafe l okH1 okH2 ~V1 {81 86}
 1929. ReactorUnitSafe ~NoLeakH1 ~V2 {47 58}
 1930. NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~l ~okH2 {63 73}
 1931. ReactorUnitSafe okH1 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V2 ~l ~okH2 {63 163}
-1932. LowTemp NoLeak NoLeakH1 NoLeakH2 V1 okH1 ~V2 {40 85}
 1933. NoLeakH1 ReactorUnitSafe okH1 okH2 ~l {113 147}
 1934. ReactorUnitSafe ~V1 ~okH2 {46 65}
-1935. NoLeakH2 ~NoLeakH1 ~V2 ~l {60 132}
 1936. LowTemp ReactorUnitSafe l okH1 ~NoLeak ~NoLeakH2 ~V1 ~V2 {68 91}
-1937. LowTemp NoLeak NoLeakH2 V2 okH1 ~NoLeakH1 ~l {50 154}
 1938. LowTemp ReactorUnitSafe l ~NoLeakH2 ~V1 ~V2 {123 145}
-1939. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~okH1 {52 143}
 1940. ReactorUnitSafe V1 okH2 ~V2 {59 162}
 1941. LowTemp NoLeakH1 ReactorUnitSafe l {137 158}
-1942. LowTemp NoLeakH2 V2 okH1 okH2 ~V1 {97 160}
-1943. LowTemp NoLeak V1 okH2 {22 74}
 1944. ReactorUnitSafe okH2 ~okH1 {106 115}
-1945. LowTemp l okH1 ~NoLeakH2 {66 98}
 1946. LowTemp ReactorUnitSafe l ~V1 ~okH2 {39 149}
-1947. V1 l okH1 ~NoLeakH2 {25 98}
-1948. V2 l okH2 ~NoLeakH1 ~V1 {15 55}
-1949. l ~V2 ~okH2 {65 110}
 1950. LowTemp NoLeakH2 ReactorUnitSafe okH1 okH2 ~V2 {72 114}
-1951. LowTemp NoLeak ~okH1 {34 78}
 1952. NoLeakH2 ReactorUnitSafe V1 l okH1 ~okH2 {137 144}
 1953. NoLeak ReactorUnitSafe V2 l okH2 ~NoLeakH1 ~NoLeakH2 {55 131}
 1954. LowTemp ReactorUnitSafe l okH2 ~NoLeakH1 {96 118}
 1955. ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V1 ~V2 {91 134}
-1956. LowTemp NoLeakH2 l okH2 ~NoLeakH1 ~V1 {52 159}
 1957. ReactorUnitSafe ~NoLeak ~V1 ~V2 ~okH1 {51 93}
-1958. V1 l okH1 okH2 ~LowTemp ~NoLeak {159 163}
-1959. okH2 ~NoLeakH1 ~l {43 136}
-1960. LowTemp NoLeakH1 NoLeakH2 ~V2 {49 142}
-1961. l ~okH1 ~okH2 {98 157}
-1962. NoLeakH2 l {65 159}
-1963. LowTemp NoLeak NoLeakH2 ~V1 ~V2 {65 125}
-1964. NoLeak V1 okH1 okH2 ~NoLeakH1 ~NoLeakH2 {74 163}
-1965. NoLeakH1 okH1 ~V2 ~l ~okH2 {65 141}
-1966. ~LowTemp ~okH2 {26 148}
-1967. LowTemp NoLeak l okH1 ~NoLeakH1 ~V1 {52 161}
-1968. NoLeakH2 okH1 ~V1 {81 148}
 1969. NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 ~V1 ~V2 {133 147}
 1970. NoLeakH1 NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~V1 {42 45}
 1971. ReactorUnitSafe V1 l okH1 okH2 ~NoLeak ~V2 {61 127}
-1972. LowTemp NoLeak NoLeakH1 NoLeakH2 l okH2 ~V1 {81 126}
 1973. ReactorUnitSafe okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~okH2 {63 127}
-1974. LowTemp NoLeakH2 okH1 ~V1 ~V2 ~l {141 154}
 1975. NoLeakH1 ReactorUnitSafe l ~okH1 ~okH2 {42 157}
 1976. NoLeakH2 ReactorUnitSafe okH2 ~V1 ~l ~okH1 {45 102}
 1977. NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 ~l ~okH1 {131 164}
 1978. NoLeakH1 ReactorUnitSafe ~l ~okH1 {78 129}
 1979. NoLeak ReactorUnitSafe ~NoLeakH1 ~V2 ~l ~okH2 {40 63}
-1980. LowTemp NoLeakH2 okH1 ~V2 {95 159}
 1981. ReactorUnitSafe ~LowTemp ~NoLeak ~V2 ~l ~okH2 {129 148}
-1982. NoLeak okH1 ~NoLeakH1 ~NoLeakH2 {43 66}
 1983. NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~l {89 101}
 1984. LowTemp ReactorUnitSafe ~NoLeakH2 ~V1 {140 149}
 1985. ReactorUnitSafe l okH1 ~NoLeakH1 ~NoLeakH2 ~V2 {127 140}
 1986. ReactorUnitSafe V2 okH2 ~NoLeakH1 {80 150}
-1987. NoLeakH2 okH2 ~V1 ~l ~okH1 {97 102}
 1988. ReactorUnitSafe okH1 ~V2 ~l {47 124}
 1989. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~V2 ~okH2 {84 95}
-1990. LowTemp NoLeak V1 okH1 ~V2 ~l {95 114}
-1991. NoLeak V2 l okH1 ~NoLeakH1 {53 161}
 1992. NoLeakH2 ReactorUnitSafe okH2 ~NoLeakH1 ~V2 {59 101}
 1993. NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V2 ~l ~okH1 {122 142}
 1994. NoLeak ReactorUnitSafe l okH1 okH2 ~NoLeakH1 ~NoLeakH2 {114 145}
 1995. ReactorUnitSafe ~NoLeak ~NoLeakH1 {99 107}
-1996. NoLeak V1 ~LowTemp ~NoLeakH2 {43 130}
-1997. LowTemp NoLeak V1 okH1 okH2 ~NoLeakH2 ~V2 {112 117}
 1998. NoLeakH2 ReactorUnitSafe V2 l ~okH1 {78 137}
-1999. LowTemp NoLeakH1 ~V1 ~V2 {3 133}
-2000. LowTemp NoLeak NoLeakH2 ~V1 {111 154}
-2001. LowTemp NoLeak ~V1 ~l {83 87}
 2002. LowTemp ReactorUnitSafe okH2 ~V1 ~l ~okH1 {46 71}
-2003. LowTemp NoLeak NoLeakH2 V2 l {111 120}
 2004. ReactorUnitSafe okH2 ~LowTemp {24 147}
 2005. LowTemp ReactorUnitSafe l ~NoLeakH1 ~V1 ~V2 {54 91}
 2006. ReactorUnitSafe ~NoLeak ~V1 ~V2 ~l ~okH1 {51 164}
-2007. LowTemp NoLeak okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~V1 {76 151}
 2008. NoLeakH1 ReactorUnitSafe V1 ~NoLeakH2 ~V2 {115 130}
 2009. ReactorUnitSafe l ~NoLeak ~NoLeakH2 ~V1 ~V2 {42 152}
 2010. NoLeak ReactorUnitSafe ~LowTemp ~NoLeakH1 ~okH1 {122 132}
-2011. LowTemp NoLeak NoLeakH1 V1 okH2 ~V2 {59 130}
-2012. V2 l ~V1 ~okH1 {78 90}
-2013. NoLeakH2 ~NoLeakH1 ~V1 ~V2 ~l {119 132}
 2014. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~V1 {96 134}
-2015. NoLeakH1 l okH2 {102 105}
 2016. ReactorUnitSafe l ~LowTemp ~NoLeakH1 ~okH2 {84 99}
-2017. LowTemp NoLeak okH2 ~NoLeakH2 ~V1 ~l {66 71}
-2018. LowTemp NoLeak NoLeakH1 okH2 ~NoLeakH2 ~V2 ~okH1 {103 126}
-2019. LowTemp NoLeak NoLeakH1 V1 l {49 130}
 2020. NoLeak NoLeakH2 ReactorUnitSafe V2 ~NoLeakH1 ~V1 ~l {99 154}
 2021. NoLeak ReactorUnitSafe l okH2 ~NoLeakH1 ~okH1 {101 126}
 2022. ReactorUnitSafe V1 l ~NoLeakH2 {118 131}
 2023. ReactorUnitSafe V1 okH1 okH2 ~V2 ~l {114 156}
-2024. LowTemp NoLeak NoLeakH1 NoLeakH2 ~l ~okH1 {116 157}
 2025. NoLeakH2 ReactorUnitSafe l {42 132}
-2026. NoLeakH1 ~NoLeakH2 {41 130}
 2027. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 ~okH1 {78 152}
-2028. ~NoLeakH1 ~V2 ~l ~okH2 {31 60}
-2029. LowTemp NoLeak NoLeakH1 l okH2 ~V2 {59 158}
-2030. LowTemp NoLeakH2 V1 l okH1 okH2 {117 159}
-2031. V2 okH2 ~V1 ~okH1 {41 106}
-2032. LowTemp NoLeakH1 l okH1 ~NoLeakH2 ~V2 {67 105}
-2033. l ~V1 ~okH2 {65 90}
-2034. LowTemp NoLeak NoLeakH2 okH1 ~V2 ~okH2 {49 95}
 2035. ReactorUnitSafe V1 {128 162}
-2036. LowTemp l okH1 ~okH2 {98 161}
 2037. LowTemp NoLeakH1 ReactorUnitSafe okH2 ~V1 ~V2 {68 102}
-2038. ~NoLeakH2 ~V1 ~V2 {70 83}
-2039. l ~NoLeakH2 ~V1 {83 90}
 2040. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V2 ~l {155 162}
 2041. ReactorUnitSafe l okH1 {47 86}
 2042. LowTemp ReactorUnitSafe V1 okH2 {107 109}
-2043. LowTemp NoLeakH1 NoLeakH2 okH1 okH2 ~NoLeak ~V1 {17 105}
-2044. LowTemp NoLeak NoLeakH2 V2 okH2 ~NoLeakH1 ~l {109 154}
-2045. okH1 ~LowTemp ~NoLeak ~NoLeakH2 {41 163}
 2046. LowTemp NoLeak ReactorUnitSafe okH1 ~NoLeakH1 ~V1 ~V2 ~okH2 {63 161}
 2047. LowTemp ReactorUnitSafe okH2 ~V1 ~V2 {72 83}
 2048. NoLeak ReactorUnitSafe okH1 ~NoLeakH2 ~V2 ~l {112 147}
-2049. NoLeak NoLeakH2 V2 okH2 ~NoLeakH1 ~V1 ~l {53 154}
-2050. LowTemp NoLeak NoLeakH2 V1 okH1 ~V2 {59 144}
 2051. LowTemp NoLeakH2 ReactorUnitSafe ~V1 ~V2 ~l {63 116}
-2052. LowTemp NoLeak NoLeakH2 V2 okH2 {44 109}
-2053. ~NoLeakH2 ~V1 {41 83}
-2054. ~V1 ~okH2 {41 65}
 2055. ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~l {51 140}
-2056. LowTemp NoLeak NoLeakH2 ~l ~okH2 {40 87}
 2057. NoLeakH1 ReactorUnitSafe l okH1 ~NoLeakH2 {83 121}
-2058. LowTemp NoLeak NoLeakH1 V1 ~l {56 130}
-2059. LowTemp NoLeak NoLeakH1 okH2 ~okH1 {106 123}
-2060. l okH2 ~LowTemp ~NoLeak ~okH1 {143 159}
-2061. ~l ~okH1 {56 143}
 2062. ReactorUnitSafe okH2 ~V1 ~V2 {125 147}
-2063. NoLeakH1 V1 l ~NoLeakH2 ~V2 {110 130}
 2064. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V2 ~l ~okH2 {63 162}
-2065. LowTemp V2 l okH1 okH2 ~V1 {41 160}
-2066. LowTemp NoLeak V1 ~l {56 131}
 2067. LowTemp NoLeakH2 ReactorUnitSafe l ~NoLeak ~NoLeakH1 ~V1 {39 138}
-2068. V1 l ~NoLeakH2 ~V2 {110 131}
-2069. LowTemp NoLeakH1 V2 l okH1 okH2 {105 160}
-2070. LowTemp l okH2 ~V1 ~okH1 {41 126}
 2071. LowTemp NoLeakH2 ReactorUnitSafe l okH1 ~V1 {39 81}
-2072. ~V2 ~l ~okH1 ~okH2 {60 157}
-2073. LowTemp NoLeakH1 okH1 okH2 {141 160}
-2074. NoLeakH2 ~V1 ~l {65 97}
-2075. V1 V2 l okH1 okH2 {69 98}
 2076. NoLeak ReactorUnitSafe V1 l okH1 ~NoLeakH1 ~okH2 {50 84}
-2077. okH2 ~NoLeakH1 ~V2 ~l {60 62}
 2078. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~V1 ~V2 ~l {63 101}
 2079. ReactorUnitSafe V1 l {131 137}
 2080. ReactorUnitSafe V1 okH1 ~l {50 156}
 2081. LowTemp NoLeakH2 ReactorUnitSafe l okH2 ~NoLeak ~NoLeakH1 ~V1 {55 72}
 2082. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 {38 89}
-2083. LowTemp NoLeak okH1 ~NoLeakH1 ~V2 ~l {89 95}
 2084. ReactorUnitSafe V1 okH1 ~LowTemp {47 94}
-2085. okH1 ~LowTemp ~NoLeak ~NoLeakH2 ~V2 ~l {119 163}
 2086. LowTemp ReactorUnitSafe V1 okH1 okH2 {69 107}
 2087. LowTemp NoLeakH2 ReactorUnitSafe ~NoLeak ~NoLeakH1 ~V1 ~V2 ~l {63 138}
 2088. ReactorUnitSafe ~LowTemp ~NoLeakH2 ~V2 ~l ~okH1 {162 164}
-2089. NoLeak l okH2 ~NoLeakH2 ~okH1 {126 143}
-2090. NoLeakH1 okH1 okH2 {81 163}
-2091. LowTemp NoLeak NoLeakH1 NoLeakH2 okH2 ~V1 {81 102}
-2092. NoLeak l okH1 ~NoLeakH1 ~okH2 {148 161}
 2093. NoLeakH1 ReactorUnitSafe l okH2 ~okH1 {42 102}
-2094. LowTemp NoLeak NoLeakH2 l okH1 ~V1 ~V2 {125 161}
 2095. LowTemp ReactorUnitSafe V2 l okH1 okH2 {118 160}
 2096. LowTemp NoLeakH1 ReactorUnitSafe okH2 ~V1 ~okH1 {42 71}
-2097. l ~NoLeakH1 ~NoLeakH2 {36 43}
-2098. NoLeak okH1 ~NoLeakH1 ~NoLeakH2 ~V2 ~l {43 112}
-2099. NoLeakH1 ~V2 ~l ~okH2 {141 157}
 2100. NoLeakH1 NoLeakH2 ReactorUnitSafe ~NoLeak ~V1 {42 51}
 2101. LowTemp ReactorUnitSafe l okH2 ~V2 {38 123}
 2102. LowTemp NoLeakH2 ReactorUnitSafe l ~NoLeakH1 ~V1 {39 77}
 2103. LowTemp ReactorUnitSafe V1 okH1 ~V2 ~okH2 {107 144}
-2104. LowTemp okH2 ~V2 ~okH1 {60 126}
-2105. LowTemp NoLeak V1 {128 131}
-2106. okH1 ~LowTemp ~NoLeak ~NoLeakH2 ~V2 {70 163}
 2107. LowTemp ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 {138 140}
-2108. V1 l ~NoLeakH2 {98 131}
 2109. LowTemp NoLeakH1 ReactorUnitSafe okH1 {86 153}
 2110. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V2 ~l {132 156}
-2111. NoLeak V1 V2 ~okH1 {40 106}
-2112. NoLeakH2 l ~NoLeakH1 ~V1 {90 132}
 2113. LowTemp NoLeakH2 ReactorUnitSafe l {42 82}
 2114. ReactorUnitSafe V2 ~V1 ~okH1 {46 78}
 2115. ReactorUnitSafe okH1 okH2 ~V1 ~V2 {101 133}
 2116. NoLeak ReactorUnitSafe V1 okH1 okH2 ~NoLeakH1 ~NoLeakH2 {74 94}
-2117. l ~NoLeakH1 ~okH2 {31 98}
-2118. LowTemp NoLeak NoLeakH1 okH1 okH2 ~V1 ~V2 {67 81}
-2119. NoLeak V1 V2 l okH1 okH2 ~NoLeakH1 {53 117}
-2120. LowTemp V1 l okH1 okH2 {98 117}
 2121. LowTemp NoLeak ReactorUnitSafe ~NoLeakH1 ~V1 ~l {140 154}
 2122. LowTemp NoLeakH2 ReactorUnitSafe ~V1 ~V2 ~okH1 {72 157}
 2123. ReactorUnitSafe ~NoLeakH1 ~okH2 {48 150}
 2124. ReactorUnitSafe V2 okH2 ~V1 ~okH1 {46 106}
-2125. okH1 ~l {73 141}
 2126. LowTemp ReactorUnitSafe ~okH1 {78 107}
 2127. NoLeak ReactorUnitSafe V1 V2 l okH1 okH2 ~NoLeakH2 {94 160}
-2128. NoLeak okH1 ~NoLeakH1 ~NoLeakH2 ~V2 {43 67}
-2129. NoLeakH2 ~LowTemp ~NoLeak ~NoLeakH1 ~V1 ~l {97 148}
 2130. ReactorUnitSafe V1 V2 l okH1 {50 118}
 2131. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~V1 ~V2 ~l ~okH2 {68 95}
-2132. V2 okH2 {53 149}
 2133. LowTemp ReactorUnitSafe V1 ~V2 ~okH2 {40 107}
-2134. LowTemp l okH1 ~V1 ~V2 ~okH2 {70 161}
-2135. NoLeakH2 V1 l okH1 okH2 {114 159}
 2136. ReactorUnitSafe okH1 ~LowTemp ~NoLeakH1 ~NoLeakH2 ~l {99 124}
-2137. V1 l okH1 ~okH2 {98 144}
-2138. ~NoLeakH2 ~V1 ~V2 ~okH1 {21 70}
 2139. LowTemp ReactorUnitSafe l okH1 ~okH2 {118 161}
 2140. ReactorUnitSafe okH1 ~V1 {99 133}
-2141. NoLeak l ~NoLeakH2 ~okH2 {148 158}
-2142. NoLeak V1 okH1 ~NoLeakH2 ~V2 {67 163}
-2143. LowTemp NoLeakH2 okH2 ~V1 ~okH1 {97 126}
 2144. ReactorUnitSafe okH2 ~NoLeak ~V1 ~V2 {72 147}
-2145. NoLeak V1 V2 ~LowTemp ~NoLeakH1 {109 148}
-2146. LowTemp NoLeak l okH1 ~V1 {54 151}
-2147. V1 okH1 ~NoLeakH2 ~V2 ~l {27 163}
-2148. NoLeakH1 l okH1 ~okH2 {65 105}
-2149. V1 okH1 ~NoLeakH2 {150 163}
 2150. LowTemp ReactorUnitSafe l ~V1 ~V2 ~okH1 {54 93}
 2151. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~V1 ~V2 ~l ~okH1 {71 72}
 2152. LowTemp NoLeakH1 ReactorUnitSafe l ~NoLeak ~NoLeakH2 ~V2 {93 100}
 2153. NoLeak ReactorUnitSafe V1 ~NoLeakH2 ~V2 ~l {57 130}
 2154. LowTemp NoLeakH2 ReactorUnitSafe okH2 ~V1 {72 88}
-2155. LowTemp NoLeakH2 l ~NoLeakH1 {82 98}
 2156. LowTemp NoLeakH1 ReactorUnitSafe V2 l okH1 okH2 {121 160}
-2157. NoLeak NoLeakH2 ~NoLeakH1 ~V1 ~l ~okH2 {148 154}
-2158. LowTemp NoLeak NoLeakH1 V1 okH2 ~NoLeakH2 ~l {103 109}
 2159. NoLeakH2 ReactorUnitSafe V1 V2 l okH2 {61 109}
 2160. NoLeakH1 ReactorUnitSafe okH1 ~V2 ~l ~okH2 {65 146}
-2161. NoLeakH2 V1 l okH1 {144 159}
-2162. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 ~okH2 {153 161}
-2163. LowTemp NoLeak NoLeakH1 V2 okH2 {106 108}
 2164. ReactorUnitSafe l ~NoLeak ~V2 ~okH2 {42 84}
-2165. LowTemp NoLeak NoLeakH2 V2 okH1 okH2 ~NoLeakH1 ~l {69 154}
-2166. NoLeakH2 ~NoLeakH1 ~l ~okH2 {56 148}
 2167. LowTemp NoLeakH1 ReactorUnitSafe l okH2 {121 126}
 2168. ReactorUnitSafe l ~LowTemp ~NoLeakH1 ~V1 {39 101}
-2169. NoLeakH2 V2 l okH1 {105 120}
 2170. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~NoLeakH2 ~V1 ~V2 ~l {68 103}
 2171. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 ~okH2 {57 84}
-2172. NoLeakH2 ~NoLeakH1 ~V1 ~okH2 {54 148}
 2173. NoLeak ReactorUnitSafe V1 okH1 ~NoLeakH1 ~NoLeakH2 {50 58}
-2174. LowTemp l okH1 ~V2 ~okH2 {110 161}
-2175. V1 ~V2 ~okH2 {40 135}
-2176. LowTemp NoLeak okH1 okH2 ~NoLeakH2 ~l {88 112}
-2177. LowTemp NoLeakH1 NoLeakH2 ~V1 {87 111}
-2178. LowTemp NoLeak V1 okH1 okH2 ~NoLeakH1 {89 117}
 2179. NoLeakH1 ReactorUnitSafe V1 l {130 137}
 2180. NoLeak ReactorUnitSafe okH1 ~NoLeakH2 {66 147}
-2181. V2 l ~okH1 {78 98}
-2182. LowTemp NoLeakH2 okH1 okH2 ~V1 ~l {79 97}
-2183. LowTemp NoLeak NoLeakH1 okH2 ~V1 ~l {71 108}
-2184. ~V2 ~l ~okH2 {142 148}
-2185. NoLeak NoLeakH2 V2 l okH2 ~NoLeakH1 {53 82}
 2186. NoLeakH1 ReactorUnitSafe l okH1 ~okH2 {65 121}
 2187. ReactorUnitSafe okH1 ~NoLeak {99 100}
-2188. LowTemp NoLeak NoLeakH1 NoLeakH2 ~V2 {85 157}
-2189. V1 V2 l okH1 {50 98}
 2190. ReactorUnitSafe l ~NoLeak ~NoLeakH1 ~V1 ~V2 {137 152}
 2191. LowTemp ReactorUnitSafe l okH1 okH2 ~NoLeak ~V1 ~V2 {72 86}
 2192. NoLeak ReactorUnitSafe V2 okH2 ~NoLeakH1 {74 99}
-2193. LowTemp NoLeakH2 okH2 ~V1 ~l ~okH1 {71 97}
 2194. NoLeak NoLeakH1 ReactorUnitSafe V1 ~NoLeakH2 ~V2 ~l {103 162}
 2195. ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V2 ~okH1 {57 93}
 2196. NoLeak ReactorUnitSafe ~NoLeakH2 ~V2 ~l ~okH1 ~okH2 {40 164}
 2197. NoLeak ReactorUnitSafe l ~NoLeakH1 ~NoLeakH2 {131 145}
 2198. ReactorUnitSafe l okH2 ~LowTemp ~NoLeak ~okH1 {61 143}
-2199. LowTemp NoLeak ~NoLeakH1 ~okH1 {74 157}
-2200. NoLeak V1 l okH1 ~NoLeakH2 {151 163}
 2201. NoLeakH2 ReactorUnitSafe ~NoLeakH1 ~V1 ~okH2 {48 54}
-2202. NoLeakH2 l ~NoLeakH1 ~okH2 {49 148}
-2203. ~V1 ~V2 ~l ~okH2 {65 119}
-2204. V2 okH1 {41 50}
-2205. NoLeakH2 l ~okH1 {157 159}
-2206. LowTemp NoLeak NoLeakH2 l okH1 ~V1 {44 161}
-2207. okH2 ~V1 ~V2 ~okH1 {125 143}
-2208. LowTemp NoLeak okH1 okH2 ~NoLeakH1 ~NoLeakH2 ~l {25 76}
-2209. LowTemp NoLeak NoLeakH2 l ~V2 {82 123}
 2210. ReactorUnitSafe okH1 ~NoLeakH2 ~V1 ~V2 {19 133}
-2211. LowTemp NoLeak NoLeakH2 ~V2 ~okH1 {59 157}
-2212. LowTemp NoLeak ~l ~okH2 {78 95}
-2213. NoLeak V1 okH1 okH2 ~NoLeakH2 ~l {79 163}
 2214. ReactorUnitSafe l ~LowTemp ~NoLeakH1 ~V2 {84 101}
-2215. LowTemp NoLeak V1 okH1 ~NoLeakH2 {50 67}
-2216. okH1 ~V1 ~V2 ~okH2 {133 148}
 2217. NoLeakH2 ReactorUnitSafe okH2 ~NoLeak ~NoLeakH1 ~V1 ~V2 {72 101}
 2218. NoLeakH2 ReactorUnitSafe ~V1 ~l ~okH1 ~okH2 {51 157}
-2219. V2 ~NoLeakH1 ~V1 {41 73}
 2220. LowTemp NoLeakH1 ReactorUnitSafe l okH1 ~V2 ~okH2 {100 161}
-2221. LowTemp NoLeakH1 okH2 ~V2 {103 159}
 2222. LowTemp NoLeakH1 ReactorUnitSafe okH1 ~V1 ~V2 ~okH2 {65 68}
-2223. LowTemp NoLeak V1 okH1 ~NoLeakH2 ~l {50 112}
 2224. NoLeakH2 ReactorUnitSafe V2 l {42 120}
-2225. LowTemp NoLeakH2 okH2 ~NoLeakH1 {89 159}
-2226. V1 l okH1 ~V2 ~okH2 {110 144}
-2227. LowTemp NoLeak NoLeakH1 NoLeakH2 okH2 ~V2 {85 102}
-2228. ~NoLeakH1 ~okH2 {148 150}
 2229. NoLeakH1 ReactorUnitSafe ~NoLeak ~NoLeakH2 ~V2 ~okH1 {93 129}
-2230. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 ~V1 {65 81}
 2231. ReactorUnitSafe ~LowTemp ~NoLeak ~V1 ~l {51 147}
 2232. NoLeakH2 ReactorUnitSafe V2 ~NoLeakH1 ~l {56 99}
 2233. ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 ~V2 {38 57}
-2234. l okH1 ~LowTemp ~NoLeak ~okH2 {105 148}
-2235. V1 l ~okH2 {40 98}
-2236. LowTemp NoLeak V2 okH1 okH2 ~NoLeakH1 ~V1 {76 160}
 2237. LowTemp NoLeakH2 ReactorUnitSafe ~V1 ~V2 {65 72}
 2238. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V1 ~l ~okH1 {99 164}
 2239. ReactorUnitSafe V1 okH1 okH2 {77 94}
-2240. NoLeakH1 okH2 ~l ~okH1 {116 143}
 2241. NoLeakH1 ReactorUnitSafe V2 l okH2 ~okH1 {42 106}
 2242. NoLeakH1 ReactorUnitSafe ~NoLeakH2 ~V1 ~V2 {122 133}
 2243. ReactorUnitSafe V1 okH1 ~V2 ~l ~okH2 {144 156}
 2244. NoLeakH2 ReactorUnitSafe ~V1 ~l ~okH2 {51 65}
-2245. LowTemp NoLeak NoLeakH2 okH2 ~V1 {88 125}
-2246. V2 l okH2 ~NoLeakH1 {29 98}
-2247. NoLeakH1 okH2 ~V2 {85 143}
 2248. ReactorUnitSafe ~V1 ~V2 ~l ~okH1 {47 164}
 2249. LowTemp NoLeakH1 ReactorUnitSafe l okH1 ~NoLeak ~NoLeakH2 ~V2 {68 127}
 2250. NoLeak ReactorUnitSafe V2 ~NoLeakH1 ~V1 {120 140}
-2251. V1 ~NoLeakH2 ~V2 ~l {60 131}
 2252. LowTemp NoLeak ReactorUnitSafe okH2 ~NoLeakH1 ~NoLeakH2 {89 92}
 2253. NoLeakH1 ReactorUnitSafe ~V2 ~l ~okH1 ~okH2 {129 157}
 2254. NoLeakH1 ReactorUnitSafe V1 ~NoLeakH2 {149 162}
-2255. LowTemp NoLeak NoLeakH1 NoLeakH2 V1 ~l {40 116}
 2256. NoLeakH2 ReactorUnitSafe V2 ~NoLeakH1 {99 128}
-2257. LowTemp NoLeak NoLeakH1 NoLeakH2 okH1 ~l {65 113}
-2258. LowTemp NoLeak okH2 ~NoLeakH1 ~NoLeakH2 ~l {76 131}
 2259. LowTemp NoLeakH1 ReactorUnitSafe {78 100}
-2260. NoLeakH1 V2 l okH1 okH2 {88 105}
 2261. NoLeak ReactorUnitSafe ~NoLeakH2 ~V1 ~l ~okH1 {78 164}
 2262. NoLeak ReactorUnitSafe V1 ~NoLeakH2 ~V2 {58 130}
 2263. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 ~V1 ~l {99 155}
@@ -2266,19 +1225,10 @@
 2266. ReactorUnitSafe V1 l ~LowTemp ~NoLeak {137 162}
 2267. ReactorUnitSafe V2 l okH2 ~okH1 {106 118}
 2268. NoLeak ReactorUnitSafe ~NoLeakH1 ~NoLeakH2 ~V1 {73 152}
-2269. l okH2 ~V1 ~okH1 {90 102}
 2270. ReactorUnitSafe ~LowTemp ~NoLeakH1 ~NoLeakH2 ~l {57 99}
-2271. LowTemp NoLeak l okH1 okH2 ~NoLeakH1 {52 117}
 2272. ReactorUnitSafe okH1 ~NoLeak ~V1 ~V2 ~l {51 124}
-2273. NoLeakH2 okH2 ~NoLeakH1 {53 59}
-2274. NoLeakH1 V1 okH1 okH2 ~V2 {85 163}
-2275. NoLeakH2 V2 okH2 ~V1 ~l {88 97}
-2276. LowTemp NoLeak V2 okH1 ~NoLeakH1 {66 120}
-2277. NoLeakH2 V2 l ~NoLeakH1 {98 120}
 2278. ReactorUnitSafe V1 ~NoLeakH2 {150 162}
 2279. LowTemp NoLeak ReactorUnitSafe l ~NoLeakH2 {92 158}
 2280. ReactorUnitSafe ~V1 ~V2 ~okH1 ~okH2 {104 157}
-2281. NoLeak okH2 ~NoLeakH1 ~NoLeakH2 {43 74}
-2282. NoLeak NoLeakH1 V1 okH1 ~NoLeakH2 ~V2 ~l {103 163}
 2283. False {11 1493}
 Size of final clause set: 2283
