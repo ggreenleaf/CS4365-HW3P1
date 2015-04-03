@@ -12,6 +12,9 @@ class KnowledgeBase:
 		print "intial clauses before resolving"
 		self.display()
 		print"-------------------------------"
+		
+
+
 		#not sure of how to test for which clause testing so uncommit line before running test
 		# self.test_clause = "y ~y z ~z" #for clauses.txt 
 		#self.test_clause = "~LowTemp LowTemp" #for task1.in
