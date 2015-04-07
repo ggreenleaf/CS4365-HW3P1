@@ -1,3 +1,5 @@
+from utils import get_parents
+
 class KnowledgeBase:
 	def __init__(self,filename):
 		with open(filename) as f:
@@ -9,18 +11,11 @@ class KnowledgeBase:
 			self.kb.append((i," ".join(sorted(line.split(" "))),"{}"))
 			i += 1
 		
-		print "intial clauses before resolving"
+		print "Intial clauses before resolving"
 		self.display()
 		print"-------------------------------"
 		
 
-
-		#not sure of how to test for which clause testing so uncommit line before running test
-		# self.test_clause = "y ~y z ~z" #for clauses.txt 
-		#self.test_clause = "~LowTemp LowTemp" #for task1.in
-		# self.test_clause = "ReactorUnitSafe ~ReactorUnitSafe" #for task2.in
-		# self.test_clause = "~NoLeak NoLeak" #for task3.in
-	
 	def display(self):
 		for num,clause,parents in self.kb:
 			print "%i."%num,clause,parents
@@ -29,11 +24,20 @@ class KnowledgeBase:
 	
 	def display_solution(self):
 		'''displays solution after testing validity of a clase'''
-		for num,clause,parents in self.kb:
-			if set(self.test_clause.split(" ")) & set(clause.split(" ")) or clause == "False":
-				print "%i."%num,clause,parents
 
-		print "Size of final clause set: %i"%len(self.kb)
+		solution_set = self.get_solution(get_parents(self.kb[-1]))
+		solution_set.append(self.kb[-1]) #add False clause to solution set
+		for i,clause,parents in sorted(set(solution_set), key=lambda x: x[0]):
+			print i, clause, parents
+		
+
+	def get_solution(self,parents):
+		if not parents:
+			return [] 
+		else:
+			clause1 = self.kb[parents[0] - 1]
+			clause2 = self.kb[parents[1] - 1]
+			return [clause1,clause2]+self.get_solution(get_parents(clause1)) + self.get_solution(get_parents(clause2))
 
 
 	def negate_literal(self,lit):
@@ -51,9 +55,8 @@ class KnowledgeBase:
 					new_clause = " ".join(self.remove(c1,c2,a1,a2)) #create new clause removing instances of a1 and a2
 					if not new_clause: #empty clause after remove means contradiction found
 						new_clause = "False"
-						
+					
 					clauses.append(new_clause)
-
 		return clauses
 
 		# return list of literals for new_clause 
@@ -61,18 +64,8 @@ class KnowledgeBase:
 		'''remove all instances of a1 and a2 from merged c1 and c2'''
 		merged = filter(lambda x: x != a1 and x != a2, c1[1].split(" ") + c2[1].split(" "))
 
-		merged = self.resolve_contradictions(merged) #need to remove contradictions in merged clause
-		return sorted(list(set(merged))) #sort merged to avoid adding multiple orders of the same literal (need combinations not permunations of literals)
-	
-	def resolve_contradictions(self,clause_list):
-		'''removes contradicting literals from clause_list'''
-		new = clause_list[:]
-		for i in clause_list:
-			negated = self.negate_literal(i)
-			if negated in clause_list: #if negated in list remove both negated and literal
-				while i in new or negated in new:
-						new.remove(i); new.remove(negated)
-		return new
+		# merged = self.resolve_contradictions(merged) #need to remove contradictions in merged clause
+		return sorted(list(set(merged))) #sort merged to avoid adding multiple orders of the same literal (need combinations not permunations of clauses)
 	
 	def add_parents_to_clauses(self,clauses,p1,p2):
 		return 	set([(clause, "{%i %i}"%(p1,p2))  for clause in clauses])			
@@ -111,6 +104,8 @@ class KnowledgeBase:
 					return False
 
 				self.add_to_kb(new_clauses) #added new clauses to knowledge base
+
+
 
 
 
