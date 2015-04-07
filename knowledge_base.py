@@ -11,9 +11,6 @@ class KnowledgeBase:
 			self.kb.append((i," ".join(sorted(line.split(" "))),"{}"))
 			i += 1
 		
-		print "Intial clauses before resolving"
-		self.display()
-		print"-------------------------------"
 		
 
 	def display(self):
@@ -29,7 +26,10 @@ class KnowledgeBase:
 		solution_set.append(self.kb[-1]) #add False clause to solution set
 		for i,clause,parents in sorted(set(solution_set), key=lambda x: x[0]):
 			print i, clause, parents
-		
+
+		print "Size of final clause set: %i"%len(self.kb)
+	
+
 
 	def get_solution(self,parents):
 		if not parents:

@@ -1,15 +1,6 @@
-intial clauses before resolving
-1. q ~p {}
-2. y ~z {}
-3. p {}
-4. z {}
-5. ~y {}
-Size of final clause set: 5
--------------------------------
-2. y ~z {}
-4. z {}
-5. ~y {}
-7. y {2 4}
-8. ~z {2 5}
-9. False {4 8}
+2 y ~z {}
+4 z {}
+5 ~y {}
+8 ~z {2 5}
+9 False {4 8}
 Size of final clause set: 9
